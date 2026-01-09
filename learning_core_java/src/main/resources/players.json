@@ -1,0 +1,422 @@
+[
+  {
+    "name": "Cameron Green",
+    "teamName": "Kolkata Knight Riders",
+    "teamLabel": "KKR",
+    "amount": 252000000
+  },
+  {
+    "name": "Matheesha Pathirana",
+    "teamName": "Kolkata Knight Riders",
+    "teamLabel": "KKR",
+    "amount": 180000000
+  },
+  {
+    "name": "Prashant Veer",
+    "teamName": "Chennai Super Kings",
+    "teamLabel": "CSK",
+    "amount": 142000000
+  },
+  {
+    "name": "Kartik Sharma",
+    "teamName": "Chennai Super Kings",
+    "teamLabel": "CSK",
+    "amount": 142000000
+  },
+  {
+    "name": "Liam Livingstone",
+    "teamName": "Sunrisers Hyderabad",
+    "teamLabel": "SRH",
+    "amount": 130000000
+  },
+  {
+    "name": "Mustafizur Rahman",
+    "teamName": "Kolkata Knight Riders",
+    "teamLabel": "KKR",
+    "amount": 92000000
+  },
+  {
+    "name": "Josh Inglis",
+    "teamName": "Lucknow Super Giants",
+    "teamLabel": "LSG",
+    "amount": 86000000
+  },
+  {
+    "name": "Auqib Dar",
+    "teamName": "Delhi Capitals",
+    "teamLabel": "DC",
+    "amount": 84000000
+  },
+  {
+    "name": "Venkatesh Iyer",
+    "teamName": "Royal Challengers Bengaluru",
+    "teamLabel": "RCB",
+    "amount": 70000000
+  },
+  {
+    "name": "Jason Holder",
+    "teamName": "Gujarat Titans",
+    "teamLabel": "GT",
+    "amount": 70000000
+  },
+  {
+    "name": "Ravi Bishnoi",
+    "teamName": "Rajasthan Royals",
+    "teamLabel": "RR",
+    "amount": 72000000
+  },
+  {
+    "name": "Rahul Chahar",
+    "teamName": "Chennai Super Kings",
+    "teamLabel": "CSK",
+    "amount": 52000000
+  },
+  {
+    "name": "Mangesh Yadav",
+    "teamName": "Royal Challengers Bengaluru",
+    "teamLabel": "RCB",
+    "amount": 52000000
+  },
+  {
+    "name": "Pathum Nissanka",
+    "teamName": "Delhi Capitals",
+    "teamLabel": "DC",
+    "amount": 40000000
+  },
+  {
+    "name": "Cooper Connolly",
+    "teamName": "Punjab Kings",
+    "teamLabel": "PBKS",
+    "amount": 30000000
+  },
+  {
+    "name": "Tejasvi Singh",
+    "teamName": "Kolkata Knight Riders",
+    "teamLabel": "KKR",
+    "amount": 30000000
+  },
+  {
+    "name": "Jack Edwards",
+    "teamName": "Sunrisers Hyderabad",
+    "teamLabel": "SRH",
+    "amount": 30000000
+  },
+  {
+    "name": "Akshat Raghuwanshi",
+    "teamName": "Lucknow Super Giants",
+    "teamLabel": "LSG",
+    "amount": 22000000
+  },
+  {
+    "name": "Adam Milne",
+    "teamName": "Rajasthan Royals",
+    "teamLabel": "RR",
+    "amount": 24000000
+  },
+  {
+    "name": "David Miller",
+    "teamName": "Delhi Capitals",
+    "teamLabel": "DC",
+    "amount": 20000000
+  },
+  {
+    "name": "Wanindu Hasaranga",
+    "teamName": "Lucknow Super Giants",
+    "teamLabel": "LSG",
+    "amount": 20000000
+  },
+  {
+    "name": "Ben Duckett",
+    "teamName": "Delhi Capitals",
+    "teamLabel": "DC",
+    "amount": 20000000
+  },
+  {
+    "name": "Finn Allen",
+    "teamName": "Kolkata Knight Riders",
+    "teamLabel": "KKR",
+    "amount": 20000000
+  },
+  {
+    "name": "Jacob Duffy",
+    "teamName": "Royal Challengers Bengaluru",
+    "teamLabel": "RCB",
+    "amount": 20000000
+  },
+  {
+    "name": "Anrich Nortje",
+    "teamName": "Lucknow Super Giants",
+    "teamLabel": "LSG",
+    "amount": 20000000
+  },
+  {
+    "name": "Akeal Hosein",
+    "teamName": "Chennai Super Kings",
+    "teamLabel": "CSK",
+    "amount": 20000000
+  },
+  {
+    "name": "Matt Henry",
+    "teamName": "Chennai Super Kings",
+    "teamLabel": "CSK",
+    "amount": 20000000
+  },
+  {
+    "name": "Lungi Ngidi",
+    "teamName": "Delhi Capitals",
+    "teamLabel": "DC",
+    "amount": 20000000
+  },
+  {
+    "name": "Kyle Jamieson",
+    "teamName": "Delhi Capitals",
+    "teamLabel": "DC",
+    "amount": 20000000
+  },
+  {
+    "name": "Tom Banton",
+    "teamName": "Gujarat Titans",
+    "teamLabel": "GT",
+    "amount": 20000000
+  },
+  {
+    "name": "Matthew Short",
+    "teamName": "Chennai Super Kings",
+    "teamLabel": "CSK",
+    "amount": 15000000
+  },
+  {
+    "name": "Tim Seifert",
+    "teamName": "Kolkata Knight Riders",
+    "teamLabel": "KKR",
+    "amount": 15000000
+  },
+  {
+    "name": "Quinton de Kock",
+    "teamName": "Mumbai Indians",
+    "teamLabel": "MI",
+    "amount": 10000000
+  },
+  {
+    "name": "Naman Tiwari",
+    "teamName": "Lucknow Super Giants",
+    "teamLabel": "LSG",
+    "amount": 10000000
+  },
+  {
+    "name": "Akash Deep",
+    "teamName": "Kolkata Knight Riders",
+    "teamLabel": "KKR",
+    "amount": 10000000
+  },
+  {
+    "name": "Luke Wood",
+    "teamName": "Gujarat Titans",
+    "teamLabel": "GT",
+    "amount": 7500000
+  },
+  {
+    "name": "Kuldeep Sen",
+    "teamName": "Rajasthan Royals",
+    "teamLabel": "RR",
+    "amount": 7500000
+  },
+  {
+    "name": "Prithvi Shaw",
+    "teamName": "Delhi Capitals",
+    "teamLabel": "DC",
+    "amount": 7500000
+  },
+  {
+    "name": "Zak Foulkes",
+    "teamName": "Chennai Super Kings",
+    "teamLabel": "CSK",
+    "amount": 7500000
+  },
+  {
+    "name": "Rahul Tripathi",
+    "teamName": "Kolkata Knight Riders",
+    "teamLabel": "KKR",
+    "amount": 7500000
+  },
+  {
+    "name": "Shivam Mavi",
+    "teamName": "Sunrisers Hyderabad",
+    "teamLabel": "SRH",
+    "amount": 7500000
+  },
+  {
+    "name": "Sarfaraz Khan",
+    "teamName": "Chennai Super Kings",
+    "teamLabel": "CSK",
+    "amount": 7500000
+  },
+  {
+    "name": "Jordan Cox",
+    "teamName": "Royal Challengers Bengaluru",
+    "teamLabel": "RCB",
+    "amount": 7500000
+  },
+  {
+    "name": "Ashok Sharma",
+    "teamName": "Gujarat Titans",
+    "teamLabel": "GT",
+    "amount": 9000000
+  },
+  {
+    "name": "Sushant Mishra",
+    "teamName": "Rajasthan Royals",
+    "teamLabel": "RR",
+    "amount": 9000000
+  },
+  {
+    "name": "Aman Khan",
+    "teamName": "Chennai Super Kings",
+    "teamLabel": "CSK",
+    "amount": 4000000
+  },
+  {
+    "name": "Shivang Kumar",
+    "teamName": "Sunrisers Hyderabad",
+    "teamLabel": "SRH",
+    "amount": 3000000
+  },
+  {
+    "name": "Kartik Tyagi",
+    "teamName": "Kolkata Knight Riders",
+    "teamLabel": "KKR",
+    "amount": 3000000
+  },
+  {
+    "name": "Prashant Solanki",
+    "teamName": "Kolkata Knight Riders",
+    "teamLabel": "KKR",
+    "amount": 3000000
+  },
+  {
+    "name": "Vignesh Puthur",
+    "teamName": "Rajasthan Royals",
+    "teamLabel": "RR",
+    "amount": 3000000
+  },
+  {
+    "name": "Danish Malewar",
+    "teamName": "Mumbai Indians",
+    "teamLabel": "MI",
+    "amount": 3000000
+  },
+  {
+    "name": "Satwik Deswal",
+    "teamName": "Royal Challengers Bengaluru",
+    "teamLabel": "RCB",
+    "amount": 3000000
+  },
+  {
+    "name": "Sakib Hussain",
+    "teamName": "Sunrisers Hyderabad",
+    "teamLabel": "SRH",
+    "amount": 3000000
+  },
+  {
+    "name": "Mohammad Izhar",
+    "teamName": "Mumbai Indians",
+    "teamLabel": "MI",
+    "amount": 3000000
+  },
+  {
+    "name": "Onkar Tarmale",
+    "teamName": "Sunrisers Hyderabad",
+    "teamLabel": "SRH",
+    "amount": 3000000
+  },
+  {
+    "name": "Atharva Ankolekar",
+    "teamName": "Mumbai Indians",
+    "teamLabel": "MI",
+    "amount": 3000000
+  },
+  {
+    "name": "Amit Kumar",
+    "teamName": "Sunrisers Hyderabad",
+    "teamLabel": "SRH",
+    "amount": 3000000
+  },
+  {
+    "name": "Praful Hinge",
+    "teamName": "Sunrisers Hyderabad",
+    "teamLabel": "SRH",
+    "amount": 3000000
+  },
+  {
+    "name": "Krains Fultera",
+    "teamName": "Sunrisers Hyderabad",
+    "teamLabel": "SRH",
+    "amount": 3000000
+  },
+  {
+    "name": "Sarthak Ranjan",
+    "teamName": "Kolkata Knight Riders",
+    "teamLabel": "KKR",
+    "amount": 3000000
+  },
+  {
+    "name": "Daksh Kamra",
+    "teamName": "Kolkata Knight Riders",
+    "teamLabel": "KKR",
+    "amount": 3000000
+  },
+  {
+    "name": "Aman Rao",
+    "teamName": "Rajasthan Royals",
+    "teamLabel": "RR",
+    "amount": 3000000
+  },
+  {
+    "name": "Mayank Rawat",
+    "teamName": "Mumbai Indians",
+    "teamLabel": "MI",
+    "amount": 3000000
+  },
+  {
+    "name": "Pravin Dubey",
+    "teamName": "Punjab Kings",
+    "teamLabel": "PBKS",
+    "amount": 3000000
+  },
+  {
+    "name": "Sahil Parikh",
+    "teamName": "Delhi Capitals",
+    "teamLabel": "DC",
+    "amount": 3000000
+  },
+  {
+    "name": "Vishal Nishad",
+    "teamName": "Punjab Kings",
+    "teamLabel": "PBKS",
+    "amount": 3000000
+  },
+  {
+    "name": "Brijesh Sharma",
+    "teamName": "Rajasthan Royals",
+    "teamLabel": "RR",
+    "amount": 3000000
+  },
+  {
+    "name": "Vicky Ostwal",
+    "teamName": "Royal Challengers Bengaluru",
+    "teamLabel": "RCB",
+    "amount": 3000000
+  },
+  {
+    "name": "Prithvi Raj",
+    "teamName": "Gujarat Titans",
+    "teamLabel": "GT",
+    "amount": 3000000
+  },
+  {
+    "name": "Kanishk Chouhan",
+    "teamName": "Royal Challengers Bengaluru",
+    "teamLabel": "RCB",
+    "amount": 3000000
+  }
+]
