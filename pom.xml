@@ -11,6 +11,8 @@
         <module>learning_core_java</module>
         <module>dice_game</module>
         <module>learning_jdbc</module>
+        <module>learning_json</module>
     </modules>
+
 
 </project>

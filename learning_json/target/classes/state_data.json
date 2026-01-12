@@ -1,0 +1,200 @@
+{
+  "india_states": [
+    {
+      "state": "Andhra Pradesh",
+      "capital": "Amaravati",
+      "population": 54000000,
+      "minTemperature": 15,
+      "maxTemperature": 45
+    },
+    {
+      "state": "Arunachal Pradesh",
+      "capital": "Itanagar",
+      "population": 1600000,
+      "minTemperature": -5,
+      "maxTemperature": 30
+    },
+    {
+      "state": "Assam",
+      "capital": "Dispur",
+      "population": 35600000,
+      "minTemperature": 8,
+      "maxTemperature": 38
+    },
+    {
+      "state": "Bihar",
+      "capital": "Patna",
+      "population": 124000000,
+      "minTemperature": 5,
+      "maxTemperature": 45
+    },
+    {
+      "state": "Chhattisgarh",
+      "capital": "Raipur",
+      "population": 30000000,
+      "minTemperature": 10,
+      "maxTemperature": 46
+    },
+    {
+      "state": "Goa",
+      "capital": "Panaji",
+      "population": 1600000,
+      "minTemperature": 20,
+      "maxTemperature": 35
+    },
+    {
+      "state": "Gujarat",
+      "capital": "Gandhinagar",
+      "population": 72000000,
+      "minTemperature": 10,
+      "maxTemperature": 48
+    },
+    {
+      "state": "Haryana",
+      "capital": "Chandigarh",
+      "population": 30000000,
+      "minTemperature": 2,
+      "maxTemperature": 45
+    },
+    {
+      "state": "Himachal Pradesh",
+      "capital": "Shimla",
+      "population": 7500000,
+      "minTemperature": -10,
+      "maxTemperature": 30
+    },
+    {
+      "state": "Jharkhand",
+      "capital": "Ranchi",
+      "population": 39000000,
+      "minTemperature": 7,
+      "maxTemperature": 42
+    },
+    {
+      "state": "Karnataka",
+      "capital": "Bengaluru",
+      "population": 68000000,
+      "minTemperature": 10,
+      "maxTemperature": 40
+    },
+    {
+      "state": "Kerala",
+      "capital": "Thiruvananthapuram",
+      "population": 36000000,
+      "minTemperature": 18,
+      "maxTemperature": 36
+    },
+    {
+      "state": "Madhya Pradesh",
+      "capital": "Bhopal",
+      "population": 85000000,
+      "minTemperature": 6,
+      "maxTemperature": 47
+    },
+    {
+      "state": "Maharashtra",
+      "capital": "Mumbai",
+      "population": 125000000,
+      "minTemperature": 12,
+      "maxTemperature": 45
+    },
+    {
+      "state": "Manipur",
+      "capital": "Imphal",
+      "population": 3100000,
+      "minTemperature": 5,
+      "maxTemperature": 32
+    },
+    {
+      "state": "Meghalaya",
+      "capital": "Shillong",
+      "population": 3400000,
+      "minTemperature": 4,
+      "maxTemperature": 28
+    },
+    {
+      "state": "Mizoram",
+      "capital": "Aizawl",
+      "population": 1300000,
+      "minTemperature": 8,
+      "maxTemperature": 30
+    },
+    {
+      "state": "Nagaland",
+      "capital": "Kohima",
+      "population": 2200000,
+      "minTemperature": 4,
+      "maxTemperature": 30
+    },
+    {
+      "state": "Odisha",
+      "capital": "Bhubaneswar",
+      "population": 47000000,
+      "minTemperature": 12,
+      "maxTemperature": 46
+    },
+    {
+      "state": "Punjab",
+      "capital": "Chandigarh",
+      "population": 30000000,
+      "minTemperature": 1,
+      "maxTemperature": 44
+    },
+    {
+      "state": "Rajasthan",
+      "capital": "Jaipur",
+      "population": 81000000,
+      "minTemperature": 0,
+      "maxTemperature": 50
+    },
+    {
+      "state": "Sikkim",
+      "capital": "Gangtok",
+      "population": 700000,
+      "minTemperature": -5,
+      "maxTemperature": 28
+    },
+    {
+      "state": "Tamil Nadu",
+      "capital": "Chennai",
+      "population": 78000000,
+      "minTemperature": 15,
+      "maxTemperature": 42
+    },
+    {
+      "state": "Telangana",
+      "capital": "Hyderabad",
+      "population": 40000000,
+      "minTemperature": 12,
+      "maxTemperature": 45
+    },
+    {
+      "state": "Tripura",
+      "capital": "Agartala",
+      "population": 4200000,
+      "minTemperature": 8,
+      "maxTemperature": 35
+    },
+    {
+      "state": "Uttar Pradesh",
+      "capital": "Lucknow",
+      "population": 240000000,
+      "minTemperature": 2,
+      "maxTemperature": 48
+    },
+    {
+      "state": "Uttarakhand",
+      "capital": "Dehradun",
+      "population": 12000000,
+      "minTemperature": -5,
+      "maxTemperature": 35
+    },
+    {
+      "state": "West Bengal",
+      "capital": "Kolkata",
+      "population": 100000000,
+      "minTemperature": 10,
+      "maxTemperature": 40
+    }
+  ]
+}

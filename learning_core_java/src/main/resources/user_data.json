@@ -1,0 +1,36 @@
+{
+  "users": [
+    { "username": "user01", "password": "pass@123" },
+    { "username": "user02", "password": "welcome01" },
+    { "username": "user03", "password": "test@321" },
+    { "username": "user04", "password": "login123" },
+    { "username": "user05", "password": "admin@123" },
+    { "username": "user06", "password": "java@001" },
+    { "username": "user07", "password": "spring@123" },
+    { "username": "user08", "password": "boot@321" },
+    { "username": "user09", "password": "cloud@111" },
+    { "username": "user10", "password": "dev@2024" },
+
+    { "username": "user11", "password": "pass@456" },
+    { "username": "user12", "password": "welcome12" },
+    { "username": "user13", "password": "test@789" },
+    { "username": "user14", "password": "login456" },
+    { "username": "user15", "password": "admin@456" },
+    { "username": "user16", "password": "java@002" },
+    { "username": "user17", "password": "spring@456" },
+    { "username": "user18", "password": "boot@654" },
+    { "username": "user19", "password": "cloud@222" },
+    { "username": "user20", "password": "dev@2025" },
+
+    { "username": "user21", "password": "pass@789" },
+    { "username": "user22", "password": "welcome22" },
+    { "username": "user23", "password": "test@111" },
+    { "username": "user24", "password": "login789" },
+    { "username": "user25", "password": "admin@789" },
+    { "username": "user26", "password": "java@003" },
+    { "username": "user27", "password": "spring@789" },
+    { "username": "user28", "password": "boot@987" },
+    { "username": "user29", "password": "cloud@333" },
+    { "username": "user30", "password": "dev@2026" }
+  ]
+}
