@@ -41,7 +41,6 @@ class Bike extends AbstractGame implements Game{
     public void play() {
         System.out.println("You are playing "+this.getClass().getSimpleName()+" game please wear helmet");
     }
-
 }
 
 
