@@ -49,6 +49,10 @@ public class CountryService {
         return null;
     }
 
+    public List<Country> getCountries(){
+        return countries;
+    }
+
 
     private static List<Country> loadDataFromJson() {
         try {
