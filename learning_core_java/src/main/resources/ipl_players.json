@@ -1,2602 +1,1598 @@
 [
   {
-    "id": 1,
-    "name": "Shubman Gill 1",
+    "name": "Ruturaj Gaikwad",
+    "role": "BATSMAN",
     "country": "India",
-    "team": "GT",
-    "role": "Batsman",
-    "age": 34,
-    "rating": 95,
-    "amount": 119310636
+    "team": "CSK",
+    "amount": 18.0
   },
   {
-    "id": 2,
-    "name": "David Warner 2",
+    "name": "Ravindra Jadeja",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "CSK",
+    "amount": 18.0
+  },
+  {
+    "name": "Matheesha Pathirana",
+    "role": "BOWLER",
+    "country": "Sri Lanka",
+    "team": "CSK",
+    "amount": 13.0
+  },
+  {
+    "name": "Shivam Dube",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "CSK",
+    "amount": 12.0
+  },
+  {
+    "name": "MS Dhoni",
+    "role": "WICKETKEEPER",
+    "country": "India",
+    "team": "CSK",
+    "amount": 4.0
+  },
+  {
+    "name": "Devon Conway",
+    "role": "BATSMAN",
+    "country": "New Zealand",
+    "team": "CSK",
+    "amount": 6.25
+  },
+  {
+    "name": "Rahul Tripathi",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "CSK",
+    "amount": 3.4
+  },
+  {
+    "name": "Rachin Ravindra",
+    "role": "ALL_ROUNDER",
+    "country": "New Zealand",
+    "team": "CSK",
+    "amount": 4.0
+  },
+  {
+    "name": "Ravichandran Ashwin",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "CSK",
+    "amount": 9.75
+  },
+  {
+    "name": "Syed Khaleel Ahmed",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "CSK",
+    "amount": 4.8
+  },
+  {
+    "name": "Noor Ahmad",
+    "role": "BOWLER",
+    "country": "Afghanistan",
+    "team": "CSK",
+    "amount": 10.0
+  },
+  {
+    "name": "Vijay Shankar",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "CSK",
+    "amount": 1.2
+  },
+  {
+    "name": "Sam Curran",
+    "role": "ALL_ROUNDER",
+    "country": "England",
+    "team": "CSK",
+    "amount": 2.4
+  },
+  {
+    "name": "Shaik Rasheed",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "CSK",
+    "amount": 0.3
+  },
+  {
+    "name": "Anshul Kamboj",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "CSK",
+    "amount": 3.4
+  },
+  {
+    "name": "Mukesh Choudhary",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "CSK",
+    "amount": 0.3
+  },
+  {
+    "name": "Deepak Hooda",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "CSK",
+    "amount": 1.7
+  },
+  {
+    "name": "Gurjapneet Singh",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "CSK",
+    "amount": 2.2
+  },
+  {
+    "name": "Nathan Ellis",
+    "role": "BOWLER",
+    "country": "Australia",
+    "team": "CSK",
+    "amount": 1.25
+  },
+  {
+    "name": "Ramakrishna Ghosh",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "CSK",
+    "amount": 0.3
+  },
+  {
+    "name": "Kamlesh Nagarkoti",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "CSK",
+    "amount": 0.3
+  },
+  {
+    "name": "Jamie Overton",
+    "role": "ALL_ROUNDER",
+    "country": "England",
+    "team": "CSK",
+    "amount": 1.5
+  },
+  {
+    "name": "Shreyas Gopal",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "CSK",
+    "amount": 0.3
+  },
+  {
+    "name": "Vansh Bedi",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "CSK",
+    "amount": 0.55
+  },
+  {
+    "name": "C Andre Siddarth",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "CSK",
+    "amount": 0.3
+  },
+  {
+    "name": "Axar Patel",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "DC",
+    "amount": 16.5
+  },
+  {
+    "name": "Kuldeep Yadav",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "DC",
+    "amount": 13.25
+  },
+  {
+    "name": "Tristan Stubbs",
+    "role": "BATSMAN",
+    "country": "South Africa",
+    "team": "DC",
+    "amount": 10.0
+  },
+  {
+    "name": "Abishek Porel",
+    "role": "WICKETKEEPER",
+    "country": "India",
+    "team": "DC",
+    "amount": 4.0
+  },
+  {
+    "name": "Mitchell Starc",
+    "role": "BOWLER",
     "country": "Australia",
     "team": "DC",
-    "role": "Batsman",
-    "age": 23,
-    "rating": 85,
-    "amount": 159431800
+    "amount": 11.75
   },
   {
-    "id": 3,
-    "name": "Jos Buttler 3",
-    "country": "England",
-    "team": "RR",
-    "role": "Batsman",
-    "age": 31,
-    "rating": 83,
-    "amount": 106904760
-  },
-  {
-    "id": 4,
-    "name": "Sunil Narine 4",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "Bowler",
-    "age": 35,
-    "rating": 93,
-    "amount": 10942119
-  },
-  {
-    "id": 5,
-    "name": "Jos Buttler 5",
-    "country": "England",
-    "team": "RR",
-    "role": "Batsman",
-    "age": 32,
-    "rating": 88,
-    "amount": 169933266
-  },
-  {
-    "id": 6,
-    "name": "Rishabh Pant 6",
+    "name": "KL Rahul",
+    "role": "WICKETKEEPER",
     "country": "India",
     "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 23,
-    "rating": 76,
-    "amount": 113412282
+    "amount": 14.0
   },
   {
-    "id": 7,
-    "name": "KL Rahul 7",
-    "country": "India",
-    "team": "LSG",
-    "role": "Batsman",
-    "age": 33,
-    "rating": 74,
-    "amount": 188542230
+    "name": "Harry Brook",
+    "role": "BATSMAN",
+    "country": "England",
+    "team": "DC",
+    "amount": 6.25
   },
   {
-    "id": 8,
-    "name": "Virat Kohli 8",
-    "country": "India",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 33,
-    "rating": 76,
-    "amount": 134750338
-  },
-  {
-    "id": 9,
-    "name": "Ravindra Jadeja 9",
-    "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 32,
-    "rating": 79,
-    "amount": 182485207
-  },
-  {
-    "id": 10,
-    "name": "Shikhar Dhawan 10",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 39,
-    "rating": 71,
-    "amount": 166881927
-  },
-  {
-    "id": 11,
-    "name": "Sanju Samson 11",
-    "country": "India",
-    "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 40,
-    "rating": 92,
-    "amount": 115211723
-  },
-  {
-    "id": 12,
-    "name": "Shikhar Dhawan 12",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 26,
-    "rating": 90,
-    "amount": 119652232
-  },
-  {
-    "id": 13,
-    "name": "Virat Kohli 13",
-    "country": "India",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 34,
-    "rating": 92,
-    "amount": 134060463
-  },
-  {
-    "id": 14,
-    "name": "Ravindra Jadeja 14",
-    "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 30,
-    "rating": 70,
-    "amount": 65081295
-  },
-  {
-    "id": 15,
-    "name": "David Warner 15",
+    "name": "Jake Fraser-Mcgurk",
+    "role": "BATSMAN",
     "country": "Australia",
     "team": "DC",
-    "role": "Batsman",
-    "age": 37,
-    "rating": 90,
-    "amount": 131112994
+    "amount": 9.0
   },
   {
-    "id": 16,
-    "name": "Shubman Gill 16",
-    "country": "India",
-    "team": "GT",
-    "role": "Batsman",
-    "age": 27,
-    "rating": 90,
-    "amount": 22095843
-  },
-  {
-    "id": 17,
-    "name": "Shikhar Dhawan 17",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 40,
-    "rating": 70,
-    "amount": 69102586
-  },
-  {
-    "id": 18,
-    "name": "Rishabh Pant 18",
+    "name": "T Natarajan",
+    "role": "BOWLER",
     "country": "India",
     "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 34,
-    "rating": 79,
-    "amount": 161076445
+    "amount": 10.75
   },
   {
-    "id": 19,
-    "name": "Rishabh Pant 19",
+    "name": "Karun Nair",
+    "role": "BATSMAN",
     "country": "India",
     "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 27,
-    "rating": 90,
-    "amount": 65794682
+    "amount": 0.5
   },
   {
-    "id": 20,
-    "name": "Kagiso Rabada 20",
-    "country": "South Africa",
-    "team": "PBKS",
-    "role": "Bowler",
-    "age": 38,
-    "rating": 83,
-    "amount": 80650900
-  },
-  {
-    "id": 21,
-    "name": "Faf du Plessis 21",
-    "country": "South Africa",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 33,
-    "rating": 73,
-    "amount": 60269177
-  },
-  {
-    "id": 22,
-    "name": "Shikhar Dhawan 22",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 28,
-    "rating": 75,
-    "amount": 189369919
-  },
-  {
-    "id": 23,
-    "name": "MS Dhoni 23",
-    "country": "India",
-    "team": "CSK",
-    "role": "Wicket Keeper",
-    "age": 22,
-    "rating": 81,
-    "amount": 47961136
-  },
-  {
-    "id": 24,
-    "name": "Jos Buttler 24",
-    "country": "England",
-    "team": "RR",
-    "role": "Batsman",
-    "age": 20,
-    "rating": 84,
-    "amount": 148691080
-  },
-  {
-    "id": 25,
-    "name": "Shikhar Dhawan 25",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 38,
-    "rating": 92,
-    "amount": 6594681
-  },
-  {
-    "id": 26,
-    "name": "MS Dhoni 26",
-    "country": "India",
-    "team": "CSK",
-    "role": "Wicket Keeper",
-    "age": 31,
-    "rating": 71,
-    "amount": 19098938
-  },
-  {
-    "id": 27,
-    "name": "Sanju Samson 27",
-    "country": "India",
-    "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 23,
-    "rating": 81,
-    "amount": 105105256
-  },
-  {
-    "id": 28,
-    "name": "Jos Buttler 28",
-    "country": "England",
-    "team": "RR",
-    "role": "Batsman",
-    "age": 23,
-    "rating": 74,
-    "amount": 116248820
-  },
-  {
-    "id": 29,
-    "name": "Jos Buttler 29",
-    "country": "England",
-    "team": "RR",
-    "role": "Batsman",
-    "age": 22,
-    "rating": 94,
-    "amount": 12335090
-  },
-  {
-    "id": 30,
-    "name": "Ravindra Jadeja 30",
-    "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 24,
-    "rating": 78,
-    "amount": 81363180
-  },
-  {
-    "id": 31,
-    "name": "Ravindra Jadeja 31",
-    "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 36,
-    "rating": 77,
-    "amount": 72473047
-  },
-  {
-    "id": 32,
-    "name": "Faf du Plessis 32",
-    "country": "South Africa",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 30,
-    "rating": 93,
-    "amount": 36863523
-  },
-  {
-    "id": 33,
-    "name": "Faf du Plessis 33",
-    "country": "South Africa",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 39,
-    "rating": 70,
-    "amount": 102917139
-  },
-  {
-    "id": 34,
-    "name": "Hardik Pandya 34",
-    "country": "India",
-    "team": "MI",
-    "role": "All-Rounder",
-    "age": 35,
-    "rating": 88,
-    "amount": 25921854
-  },
-  {
-    "id": 35,
-    "name": "Rishabh Pant 35",
+    "name": "Sameer Rizvi",
+    "role": "ALL_ROUNDER",
     "country": "India",
     "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 20,
-    "rating": 87,
-    "amount": 92723939
+    "amount": 0.95
   },
   {
-    "id": 36,
-    "name": "Shubman Gill 36",
-    "country": "India",
-    "team": "GT",
-    "role": "Batsman",
-    "age": 37,
-    "rating": 71,
-    "amount": 133041533
-  },
-  {
-    "id": 37,
-    "name": "MS Dhoni 37",
-    "country": "India",
-    "team": "CSK",
-    "role": "Wicket Keeper",
-    "age": 25,
-    "rating": 78,
-    "amount": 64900139
-  },
-  {
-    "id": 38,
-    "name": "Ravindra Jadeja 38",
-    "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 37,
-    "rating": 92,
-    "amount": 164228366
-  },
-  {
-    "id": 39,
-    "name": "Sunil Narine 39",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "Bowler",
-    "age": 29,
-    "rating": 93,
-    "amount": 148253148
-  },
-  {
-    "id": 40,
-    "name": "Shubman Gill 40",
-    "country": "India",
-    "team": "GT",
-    "role": "Batsman",
-    "age": 39,
-    "rating": 73,
-    "amount": 117480778
-  },
-  {
-    "id": 41,
-    "name": "Sunil Narine 41",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "Bowler",
-    "age": 20,
-    "rating": 80,
-    "amount": 38804223
-  },
-  {
-    "id": 42,
-    "name": "Rishabh Pant 42",
+    "name": "Ashutosh Sharma",
+    "role": "ALL_ROUNDER",
     "country": "India",
     "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 40,
-    "rating": 88,
-    "amount": 5204790
+    "amount": 3.8
   },
   {
-    "id": 43,
-    "name": "Rashid Khan 43",
+    "name": "Mohit Sharma",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "DC",
+    "amount": 2.2
+  },
+  {
+    "name": "Faf du Plessis",
+    "role": "BATSMAN",
+    "country": "South Africa",
+    "team": "DC",
+    "amount": 2.0
+  },
+  {
+    "name": "Mukesh Kumar",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "DC",
+    "amount": 8.0
+  },
+  {
+    "name": "Darshan Nalkande",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "DC",
+    "amount": 0.3
+  },
+  {
+    "name": "Vipraj Nigam",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "DC",
+    "amount": 0.5
+  },
+  {
+    "name": "Dushmantha Chameera",
+    "role": "BOWLER",
+    "country": "Sri Lanka",
+    "team": "DC",
+    "amount": 0.75
+  },
+  {
+    "name": "Donovan Ferreira",
+    "role": "BATSMAN",
+    "country": "South Africa",
+    "team": "DC",
+    "amount": 0.75
+  },
+  {
+    "name": "Ajay Mandal",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "DC",
+    "amount": 0.3
+  },
+  {
+    "name": "Manvanth Kumar",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "DC",
+    "amount": 0.3
+  },
+  {
+    "name": "Madhav Tiwari",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "DC",
+    "amount": 0.4
+  },
+  {
+    "name": "Tripurana Vijay",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "DC",
+    "amount": 0.3
+  },
+  {
+    "name": "Rashid Khan",
+    "role": "BOWLER",
     "country": "Afghanistan",
     "team": "GT",
-    "role": "Bowler",
-    "age": 28,
-    "rating": 72,
-    "amount": 26390253
+    "amount": 18.0
   },
   {
-    "id": 44,
-    "name": "Rishabh Pant 44",
-    "country": "India",
-    "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 24,
-    "rating": 92,
-    "amount": 4261052
-  },
-  {
-    "id": 45,
-    "name": "Hardik Pandya 45",
-    "country": "India",
-    "team": "MI",
-    "role": "All-Rounder",
-    "age": 25,
-    "rating": 91,
-    "amount": 40858597
-  },
-  {
-    "id": 46,
-    "name": "Sanju Samson 46",
-    "country": "India",
-    "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 32,
-    "rating": 84,
-    "amount": 57140570
-  },
-  {
-    "id": 47,
-    "name": "Shubman Gill 47",
+    "name": "Shubman Gill",
+    "role": "BATSMAN",
     "country": "India",
     "team": "GT",
-    "role": "Batsman",
-    "age": 39,
-    "rating": 80,
-    "amount": 15887562
+    "amount": 16.5
   },
   {
-    "id": 48,
-    "name": "David Warner 48",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 34,
-    "rating": 71,
-    "amount": 67669123
-  },
-  {
-    "id": 49,
-    "name": "Rishabh Pant 49",
-    "country": "India",
-    "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 38,
-    "rating": 86,
-    "amount": 51078461
-  },
-  {
-    "id": 50,
-    "name": "KL Rahul 50",
-    "country": "India",
-    "team": "LSG",
-    "role": "Batsman",
-    "age": 27,
-    "rating": 95,
-    "amount": 27162747
-  },
-  {
-    "id": 51,
-    "name": "Pat Cummins 51",
-    "country": "Australia",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 33,
-    "rating": 87,
-    "amount": 136279126
-  },
-  {
-    "id": 52,
-    "name": "Rishabh Pant 52",
-    "country": "India",
-    "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 26,
-    "rating": 77,
-    "amount": 87189631
-  },
-  {
-    "id": 53,
-    "name": "Andre Russell 53",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "All-Rounder",
-    "age": 38,
-    "rating": 92,
-    "amount": 176599150
-  },
-  {
-    "id": 54,
-    "name": "Sanju Samson 54",
-    "country": "India",
-    "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 31,
-    "rating": 86,
-    "amount": 135944407
-  },
-  {
-    "id": 55,
-    "name": "Bhuvneshwar Kumar 55",
-    "country": "India",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 27,
-    "rating": 75,
-    "amount": 102876603
-  },
-  {
-    "id": 56,
-    "name": "Rishabh Pant 56",
-    "country": "India",
-    "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 21,
-    "rating": 93,
-    "amount": 20426003
-  },
-  {
-    "id": 57,
-    "name": "Rishabh Pant 57",
-    "country": "India",
-    "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 33,
-    "rating": 91,
-    "amount": 19261805
-  },
-  {
-    "id": 58,
-    "name": "Rohit Sharma 58",
-    "country": "India",
-    "team": "MI",
-    "role": "Batsman",
-    "age": 23,
-    "rating": 93,
-    "amount": 98495915
-  },
-  {
-    "id": 59,
-    "name": "Hardik Pandya 59",
-    "country": "India",
-    "team": "MI",
-    "role": "All-Rounder",
-    "age": 25,
-    "rating": 70,
-    "amount": 183221442
-  },
-  {
-    "id": 60,
-    "name": "Hardik Pandya 60",
-    "country": "India",
-    "team": "MI",
-    "role": "All-Rounder",
-    "age": 24,
-    "rating": 79,
-    "amount": 123794733
-  },
-  {
-    "id": 61,
-    "name": "Rishabh Pant 61",
-    "country": "India",
-    "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 31,
-    "rating": 94,
-    "amount": 123473909
-  },
-  {
-    "id": 62,
-    "name": "Shubman Gill 62",
+    "name": "Sai Sudharsan",
+    "role": "BATSMAN",
     "country": "India",
     "team": "GT",
-    "role": "Batsman",
-    "age": 37,
-    "rating": 73,
-    "amount": 59931131
+    "amount": 8.5
   },
   {
-    "id": 63,
-    "name": "Sunil Narine 63",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "Bowler",
-    "age": 31,
-    "rating": 73,
-    "amount": 162522094
-  },
-  {
-    "id": 64,
-    "name": "Andre Russell 64",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "All-Rounder",
-    "age": 26,
-    "rating": 70,
-    "amount": 39473430
-  },
-  {
-    "id": 65,
-    "name": "Ravindra Jadeja 65",
+    "name": "Rahul Tewatia",
+    "role": "ALL_ROUNDER",
     "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 22,
-    "rating": 77,
-    "amount": 193594804
+    "team": "GT",
+    "amount": 4.0
   },
   {
-    "id": 66,
-    "name": "Rohit Sharma 66",
+    "name": "Shahrukh Khan",
+    "role": "BATSMAN",
     "country": "India",
-    "team": "MI",
-    "role": "Batsman",
-    "age": 34,
-    "rating": 76,
-    "amount": 103251222
+    "team": "GT",
+    "amount": 4.0
   },
   {
-    "id": 67,
-    "name": "Rashid Khan 67",
+    "name": "Kagiso Rabada",
+    "role": "BOWLER",
+    "country": "South Africa",
+    "team": "GT",
+    "amount": 10.75
+  },
+  {
+    "name": "Jos Buttler",
+    "role": "BATSMAN",
+    "country": "England",
+    "team": "GT",
+    "amount": 15.75
+  },
+  {
+    "name": "Mohammad Siraj",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "GT",
+    "amount": 12.25
+  },
+  {
+    "name": "Prasidh Krishna",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "GT",
+    "amount": 9.5
+  },
+  {
+    "name": "Nishant Sindhu",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "GT",
+    "amount": 0.3
+  },
+  {
+    "name": "Mahipal Lomror",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "GT",
+    "amount": 1.7
+  },
+  {
+    "name": "Kumar Kushagra",
+    "role": "WICKETKEEPER",
+    "country": "India",
+    "team": "GT",
+    "amount": 0.65
+  },
+  {
+    "name": "Anuj Rawat",
+    "role": "WICKETKEEPER",
+    "country": "India",
+    "team": "GT",
+    "amount": 0.3
+  },
+  {
+    "name": "Manav Suthar",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "GT",
+    "amount": 0.3
+  },
+  {
+    "name": "Washington Sundar",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "GT",
+    "amount": 3.2
+  },
+  {
+    "name": "Gerald Coetzee",
+    "role": "BOWLER",
+    "country": "South Africa",
+    "team": "GT",
+    "amount": 2.4
+  },
+  {
+    "name": "Arshad Khan",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "GT",
+    "amount": 1.3
+  },
+  {
+    "name": "Gurnoor Brar",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "GT",
+    "amount": 1.3
+  },
+  {
+    "name": "Sherfane Rutherford",
+    "role": "BATSMAN",
+    "country": "West Indies",
+    "team": "GT",
+    "amount": 2.6
+  },
+  {
+    "name": "R Sai Kishore",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "GT",
+    "amount": 2.0
+  },
+  {
+    "name": "Ishant Sharma",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "GT",
+    "amount": 0.75
+  },
+  {
+    "name": "Jayant Yadav",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "GT",
+    "amount": 0.75
+  },
+  {
+    "name": "Glenn Phillips",
+    "role": "ALL_ROUNDER",
+    "country": "New Zealand",
+    "team": "GT",
+    "amount": 2.0
+  },
+  {
+    "name": "Karim Janat",
+    "role": "ALL_ROUNDER",
     "country": "Afghanistan",
     "team": "GT",
-    "role": "Bowler",
-    "age": 21,
-    "rating": 91,
-    "amount": 77596347
+    "amount": 0.75
   },
   {
-    "id": 68,
-    "name": "Virat Kohli 68",
+    "name": "Kulwant Khejroliya",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "GT",
+    "amount": 0.3
+  },
+  {
+    "name": "Rinku Singh",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "KKR",
+    "amount": 13.0
+  },
+  {
+    "name": "Varun Chakaravarthy",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "KKR",
+    "amount": 12.0
+  },
+  {
+    "name": "Sunil Narine",
+    "role": "ALL_ROUNDER",
+    "country": "West Indies",
+    "team": "KKR",
+    "amount": 12.0
+  },
+  {
+    "name": "Andre Russell",
+    "role": "ALL_ROUNDER",
+    "country": "West Indies",
+    "team": "KKR",
+    "amount": 12.0
+  },
+  {
+    "name": "Harshit Rana",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "KKR",
+    "amount": 4.0
+  },
+  {
+    "name": "Ramandeep Singh",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "KKR",
+    "amount": 4.0
+  },
+  {
+    "name": "Venkatesh Iyer",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "KKR",
+    "amount": 23.75
+  },
+  {
+    "name": "Quinton de Kock",
+    "role": "WICKETKEEPER",
+    "country": "South Africa",
+    "team": "KKR",
+    "amount": 3.6
+  },
+  {
+    "name": "Rahmanullah Gurbaz",
+    "role": "WICKETKEEPER",
+    "country": "Afghanistan",
+    "team": "KKR",
+    "amount": 2.0
+  },
+  {
+    "name": "Anrich Nortje",
+    "role": "BOWLER",
+    "country": "South Africa",
+    "team": "KKR",
+    "amount": 6.5
+  },
+  {
+    "name": "Angkrish Raghuvanshi",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "KKR",
+    "amount": 3.0
+  },
+  {
+    "name": "Vaibhav Arora",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "KKR",
+    "amount": 1.8
+  },
+  {
+    "name": "Mayank Markande",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "KKR",
+    "amount": 0.3
+  },
+  {
+    "name": "Rovman Powell",
+    "role": "BATSMAN",
+    "country": "West Indies",
+    "team": "KKR",
+    "amount": 1.5
+  },
+  {
+    "name": "Manish Pandey",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "KKR",
+    "amount": 0.75
+  },
+  {
+    "name": "Spencer Johnson",
+    "role": "BOWLER",
+    "country": "Australia",
+    "team": "KKR",
+    "amount": 2.8
+  },
+  {
+    "name": "Luvnith Sisodia",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "KKR",
+    "amount": 0.3
+  },
+  {
+    "name": "Ajinkya Rahane",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "KKR",
+    "amount": 1.5
+  },
+  {
+    "name": "Anukul Roy",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "KKR",
+    "amount": 0.4
+  },
+  {
+    "name": "Moeen Ali",
+    "role": "ALL_ROUNDER",
+    "country": "England",
+    "team": "KKR",
+    "amount": 2.0
+  },
+  {
+    "name": "Umran Malik",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "KKR",
+    "amount": 0.75
+  },
+  {
+    "name": "Nicholas Pooran",
+    "role": "WICKETKEEPER",
+    "country": "West Indies",
+    "team": "LSG",
+    "amount": 21.0
+  },
+  {
+    "name": "Ravi Bishnoi",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 11.0
+  },
+  {
+    "name": "Mayank Yadav",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 11.0
+  },
+  {
+    "name": "Mohsin Khan",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 4.0
+  },
+  {
+    "name": "Ayush Badoni",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "LSG",
+    "amount": 4.0
+  },
+  {
+    "name": "Rishabh Pant",
+    "role": "WICKETKEEPER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 27.0
+  },
+  {
+    "name": "David Miller",
+    "role": "BATSMAN",
+    "country": "South Africa",
+    "team": "LSG",
+    "amount": 7.5
+  },
+  {
+    "name": "Mitchell Marsh",
+    "role": "ALL_ROUNDER",
+    "country": "Australia",
+    "team": "LSG",
+    "amount": 3.4
+  },
+  {
+    "name": "Aiden Markram",
+    "role": "BATSMAN",
+    "country": "South Africa",
+    "team": "LSG",
+    "amount": 2.0
+  },
+  {
+    "name": "Avesh Khan",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 9.75
+  },
+  {
+    "name": "Abdul Samad",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 4.2
+  },
+  {
+    "name": "Aryan Juyal",
+    "role": "WICKETKEEPER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 0.3
+  },
+  {
+    "name": "Akash Deep",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 8.0
+  },
+  {
+    "name": "Himmat Singh",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "LSG",
+    "amount": 0.3
+  },
+  {
+    "name": "M Siddharth",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 0.75
+  },
+  {
+    "name": "Digvesh Singh",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 0.3
+  },
+  {
+    "name": "Shahbaz Ahmed",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 2.4
+  },
+  {
+    "name": "Akash Singh",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 0.3
+  },
+  {
+    "name": "Shamar Joseph",
+    "role": "BOWLER",
+    "country": "West Indies",
+    "team": "LSG",
+    "amount": 0.75
+  },
+  {
+    "name": "Prince Yadav",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 0.3
+  },
+  {
+    "name": "Yuvraj Chaudhary",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 0.3
+  },
+  {
+    "name": "Rajvardhan Hangargekar",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 0.3
+  },
+  {
+    "name": "Arshin Kulkarni",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "LSG",
+    "amount": 0.3
+  },
+  {
+    "name": "Matthew Breetzke",
+    "role": "BATSMAN",
+    "country": "South Africa",
+    "team": "LSG",
+    "amount": 0.75
+  },
+  {
+    "name": "Virat Kohli",
+    "role": "BATSMAN",
     "country": "India",
     "team": "RCB",
-    "role": "Batsman",
-    "age": 26,
-    "rating": 81,
-    "amount": 32405516
+    "amount": 21.0
   },
   {
-    "id": 69,
-    "name": "Rashid Khan 69",
-    "country": "Afghanistan",
-    "team": "GT",
-    "role": "Bowler",
-    "age": 29,
-    "rating": 95,
-    "amount": 152888301
-  },
-  {
-    "id": 70,
-    "name": "KL Rahul 70",
+    "name": "Rajat Patidar",
+    "role": "BATSMAN",
     "country": "India",
-    "team": "LSG",
-    "role": "Batsman",
-    "age": 37,
-    "rating": 91,
-    "amount": 102260466
+    "team": "RCB",
+    "amount": 11.0
   },
   {
-    "id": 71,
-    "name": "Sunil Narine 71",
+    "name": "Yash Dayal",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "RCB",
+    "amount": 5.0
+  },
+  {
+    "name": "Liam Livingstone",
+    "role": "ALL_ROUNDER",
+    "country": "England",
+    "team": "RCB",
+    "amount": 8.75
+  },
+  {
+    "name": "Phil Salt",
+    "role": "WICKETKEEPER",
+    "country": "England",
+    "team": "RCB",
+    "amount": 11.5
+  },
+  {
+    "name": "Jitesh Sharma",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "RCB",
+    "amount": 11.0
+  },
+  {
+    "name": "Josh Hazlewood",
+    "role": "BOWLER",
+    "country": "Australia",
+    "team": "RCB",
+    "amount": 12.5
+  },
+  {
+    "name": "Rasikh Dar",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "RCB",
+    "amount": 6.0
+  },
+  {
+    "name": "Suyash Sharma",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "RCB",
+    "amount": 2.6
+  },
+  {
+    "name": "Krunal Pandya",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "RCB",
+    "amount": 5.75
+  },
+  {
+    "name": "Bhuvneshwar Kumar",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "RCB",
+    "amount": 10.75
+  },
+  {
+    "name": "Swapnil Singh",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "RCB",
+    "amount": 0.5
+  },
+  {
+    "name": "Tim David",
+    "role": "ALL_ROUNDER",
+    "country": "Australia",
+    "team": "RCB",
+    "amount": 3.0
+  },
+  {
+    "name": "Romario Shepherd",
+    "role": "ALL_ROUNDER",
     "country": "West Indies",
-    "team": "KKR",
-    "role": "Bowler",
-    "age": 27,
-    "rating": 85,
-    "amount": 24503274
+    "team": "RCB",
+    "amount": 1.5
   },
   {
-    "id": 72,
-    "name": "Rashid Khan 72",
-    "country": "Afghanistan",
-    "team": "GT",
-    "role": "Bowler",
-    "age": 39,
-    "rating": 86,
-    "amount": 94643854
+    "name": "Nuwan Thushara",
+    "role": "BOWLER",
+    "country": "Sri Lanka",
+    "team": "RCB",
+    "amount": 1.6
   },
   {
-    "id": 73,
-    "name": "Shikhar Dhawan 73",
+    "name": "Manoj Bhandage",
+    "role": "BOWLER",
     "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 33,
-    "rating": 95,
-    "amount": 34750378
+    "team": "RCB",
+    "amount": 0.3
   },
   {
-    "id": 74,
-    "name": "Rohit Sharma 74",
+    "name": "Jacob Bethell",
+    "role": "ALL_ROUNDER",
+    "country": "England",
+    "team": "RCB",
+    "amount": 2.6
+  },
+  {
+    "name": "Devdutt Padikkal",
+    "role": "BATSMAN",
     "country": "India",
-    "team": "MI",
-    "role": "Batsman",
-    "age": 40,
-    "rating": 88,
-    "amount": 2699234
+    "team": "RCB",
+    "amount": 2.0
   },
   {
-    "id": 75,
-    "name": "Bhuvneshwar Kumar 75",
+    "name": "Swastik Chikara",
+    "role": "BATSMAN",
     "country": "India",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 23,
-    "rating": 85,
-    "amount": 126012976
+    "team": "RCB",
+    "amount": 0.3
   },
   {
-    "id": 76,
-    "name": "Rashid Khan 76",
-    "country": "Afghanistan",
-    "team": "GT",
-    "role": "Bowler",
-    "age": 38,
-    "rating": 93,
-    "amount": 99094680
+    "name": "Mohit Rathee",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "RCB",
+    "amount": 0.3
   },
   {
-    "id": 77,
-    "name": "Jos Buttler 77",
+    "name": "Abhinandan Singh",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "RCB",
+    "amount": 0.3
+  },
+  {
+    "name": "Lungi Ngidi",
+    "role": "BOWLER",
+    "country": "South Africa",
+    "team": "RCB",
+    "amount": 1.0
+  },
+  {
+    "name": "Sanju Samson",
+    "role": "WICKETKEEPER",
+    "country": "India",
+    "team": "RR",
+    "amount": 18.0
+  },
+  {
+    "name": "Yashasvi Jaiswal",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "RR",
+    "amount": 18.0
+  },
+  {
+    "name": "Riyan Parag",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "RR",
+    "amount": 14.0
+  },
+  {
+    "name": "Dhruv Jurel",
+    "role": "WICKETKEEPER",
+    "country": "India",
+    "team": "RR",
+    "amount": 14.0
+  },
+  {
+    "name": "Shimron Hetmyer",
+    "role": "BATSMAN",
+    "country": "West Indies",
+    "team": "RR",
+    "amount": 11.0
+  },
+  {
+    "name": "Sandeep Sharma",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "RR",
+    "amount": 4.0
+  },
+  {
+    "name": "Jofra Archer",
+    "role": "BOWLER",
     "country": "England",
     "team": "RR",
-    "role": "Batsman",
-    "age": 31,
-    "rating": 87,
-    "amount": 7680258
+    "amount": 12.5
   },
   {
-    "id": 78,
-    "name": "Rashid Khan 78",
-    "country": "Afghanistan",
-    "team": "GT",
-    "role": "Bowler",
-    "age": 22,
-    "rating": 80,
-    "amount": 87853645
+    "name": "Mahesh Theekshana",
+    "role": "BOWLER",
+    "country": "Sri Lanka",
+    "team": "RR",
+    "amount": 4.4
   },
   {
-    "id": 79,
-    "name": "Kagiso Rabada 79",
-    "country": "South Africa",
-    "team": "PBKS",
-    "role": "Bowler",
-    "age": 21,
-    "rating": 74,
-    "amount": 78004060
+    "name": "Wanindu Hasaranga",
+    "role": "BOWLER",
+    "country": "Sri Lanka",
+    "team": "RR",
+    "amount": 5.25
   },
   {
-    "id": 80,
-    "name": "Ravindra Jadeja 80",
-    "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 32,
-    "rating": 77,
-    "amount": 193290700
-  },
-  {
-    "id": 81,
-    "name": "Pat Cummins 81",
-    "country": "Australia",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 23,
-    "rating": 79,
-    "amount": 7730787
-  },
-  {
-    "id": 82,
-    "name": "MS Dhoni 82",
-    "country": "India",
-    "team": "CSK",
-    "role": "Wicket Keeper",
-    "age": 37,
-    "rating": 93,
-    "amount": 149643151
-  },
-  {
-    "id": 83,
-    "name": "Rohit Sharma 83",
-    "country": "India",
-    "team": "MI",
-    "role": "Batsman",
-    "age": 25,
-    "rating": 78,
-    "amount": 87830555
-  },
-  {
-    "id": 84,
-    "name": "Sanju Samson 84",
+    "name": "Akash Madhwal",
+    "role": "BOWLER",
     "country": "India",
     "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 38,
-    "rating": 78,
-    "amount": 157851656
+    "amount": 1.2
   },
   {
-    "id": 85,
-    "name": "Ravindra Jadeja 85",
-    "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 22,
-    "rating": 71,
-    "amount": 107276889
-  },
-  {
-    "id": 86,
-    "name": "David Warner 86",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 29,
-    "rating": 75,
-    "amount": 69372645
-  },
-  {
-    "id": 87,
-    "name": "Andre Russell 87",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "All-Rounder",
-    "age": 39,
-    "rating": 89,
-    "amount": 43406438
-  },
-  {
-    "id": 88,
-    "name": "Jasprit Bumrah 88",
-    "country": "India",
-    "team": "MI",
-    "role": "Bowler",
-    "age": 36,
-    "rating": 74,
-    "amount": 13711161
-  },
-  {
-    "id": 89,
-    "name": "Shubman Gill 89",
-    "country": "India",
-    "team": "GT",
-    "role": "Batsman",
-    "age": 32,
-    "rating": 87,
-    "amount": 82895883
-  },
-  {
-    "id": 90,
-    "name": "Jasprit Bumrah 90",
-    "country": "India",
-    "team": "MI",
-    "role": "Bowler",
-    "age": 30,
-    "rating": 79,
-    "amount": 15561997
-  },
-  {
-    "id": 91,
-    "name": "Pat Cummins 91",
-    "country": "Australia",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 33,
-    "rating": 89,
-    "amount": 106202988
-  },
-  {
-    "id": 92,
-    "name": "Rashid Khan 92",
-    "country": "Afghanistan",
-    "team": "GT",
-    "role": "Bowler",
-    "age": 24,
-    "rating": 71,
-    "amount": 174882818
-  },
-  {
-    "id": 93,
-    "name": "Kagiso Rabada 93",
-    "country": "South Africa",
-    "team": "PBKS",
-    "role": "Bowler",
-    "age": 23,
-    "rating": 89,
-    "amount": 12755718
-  },
-  {
-    "id": 94,
-    "name": "Shubman Gill 94",
-    "country": "India",
-    "team": "GT",
-    "role": "Batsman",
-    "age": 20,
-    "rating": 82,
-    "amount": 7302481
-  },
-  {
-    "id": 95,
-    "name": "Rishabh Pant 95",
-    "country": "India",
-    "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 30,
-    "rating": 75,
-    "amount": 71210489
-  },
-  {
-    "id": 96,
-    "name": "Faf du Plessis 96",
-    "country": "South Africa",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 36,
-    "rating": 79,
-    "amount": 176887497
-  },
-  {
-    "id": 97,
-    "name": "Shikhar Dhawan 97",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 25,
-    "rating": 71,
-    "amount": 183558968
-  },
-  {
-    "id": 98,
-    "name": "Kagiso Rabada 98",
-    "country": "South Africa",
-    "team": "PBKS",
-    "role": "Bowler",
-    "age": 27,
-    "rating": 72,
-    "amount": 159707480
-  },
-  {
-    "id": 99,
-    "name": "MS Dhoni 99",
-    "country": "India",
-    "team": "CSK",
-    "role": "Wicket Keeper",
-    "age": 20,
-    "rating": 83,
-    "amount": 26286916
-  },
-  {
-    "id": 100,
-    "name": "Jasprit Bumrah 100",
-    "country": "India",
-    "team": "MI",
-    "role": "Bowler",
-    "age": 39,
-    "rating": 72,
-    "amount": 51372300
-  },
-  {
-    "id": 101,
-    "name": "Rashid Khan 101",
-    "country": "Afghanistan",
-    "team": "GT",
-    "role": "Bowler",
-    "age": 21,
-    "rating": 90,
-    "amount": 87467945
-  },
-  {
-    "id": 102,
-    "name": "Rashid Khan 102",
-    "country": "Afghanistan",
-    "team": "GT",
-    "role": "Bowler",
-    "age": 36,
-    "rating": 72,
-    "amount": 75126141
-  },
-  {
-    "id": 103,
-    "name": "Faf du Plessis 103",
-    "country": "South Africa",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 29,
-    "rating": 86,
-    "amount": 108593725
-  },
-  {
-    "id": 104,
-    "name": "Rohit Sharma 104",
-    "country": "India",
-    "team": "MI",
-    "role": "Batsman",
-    "age": 32,
-    "rating": 72,
-    "amount": 138246827
-  },
-  {
-    "id": 105,
-    "name": "Bhuvneshwar Kumar 105",
-    "country": "India",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 29,
-    "rating": 71,
-    "amount": 2536226
-  },
-  {
-    "id": 106,
-    "name": "Kagiso Rabada 106",
-    "country": "South Africa",
-    "team": "PBKS",
-    "role": "Bowler",
-    "age": 28,
-    "rating": 83,
-    "amount": 179259070
-  },
-  {
-    "id": 107,
-    "name": "KL Rahul 107",
-    "country": "India",
-    "team": "LSG",
-    "role": "Batsman",
-    "age": 28,
-    "rating": 83,
-    "amount": 109751824
-  },
-  {
-    "id": 108,
-    "name": "David Warner 108",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 24,
-    "rating": 91,
-    "amount": 23206129
-  },
-  {
-    "id": 109,
-    "name": "Kagiso Rabada 109",
-    "country": "South Africa",
-    "team": "PBKS",
-    "role": "Bowler",
-    "age": 39,
-    "rating": 94,
-    "amount": 183707227
-  },
-  {
-    "id": 110,
-    "name": "Rishabh Pant 110",
-    "country": "India",
-    "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 29,
-    "rating": 93,
-    "amount": 167861240
-  },
-  {
-    "id": 111,
-    "name": "Kagiso Rabada 111",
-    "country": "South Africa",
-    "team": "PBKS",
-    "role": "Bowler",
-    "age": 22,
-    "rating": 86,
-    "amount": 143991340
-  },
-  {
-    "id": 112,
-    "name": "KL Rahul 112",
-    "country": "India",
-    "team": "LSG",
-    "role": "Batsman",
-    "age": 28,
-    "rating": 74,
-    "amount": 144016001
-  },
-  {
-    "id": 113,
-    "name": "Andre Russell 113",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "All-Rounder",
-    "age": 31,
-    "rating": 81,
-    "amount": 108449116
-  },
-  {
-    "id": 114,
-    "name": "Hardik Pandya 114",
-    "country": "India",
-    "team": "MI",
-    "role": "All-Rounder",
-    "age": 33,
-    "rating": 75,
-    "amount": 165831872
-  },
-  {
-    "id": 115,
-    "name": "Faf du Plessis 115",
-    "country": "South Africa",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 32,
-    "rating": 77,
-    "amount": 97093769
-  },
-  {
-    "id": 116,
-    "name": "David Warner 116",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 32,
-    "rating": 92,
-    "amount": 33371460
-  },
-  {
-    "id": 117,
-    "name": "Ravindra Jadeja 117",
-    "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 29,
-    "rating": 75,
-    "amount": 71700965
-  },
-  {
-    "id": 118,
-    "name": "KL Rahul 118",
-    "country": "India",
-    "team": "LSG",
-    "role": "Batsman",
-    "age": 31,
-    "rating": 93,
-    "amount": 68463253
-  },
-  {
-    "id": 119,
-    "name": "Sanju Samson 119",
+    "name": "Kumar Kartikeya Singh",
+    "role": "BOWLER",
     "country": "India",
     "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 38,
-    "rating": 85,
-    "amount": 21514109
+    "amount": 0.3
   },
   {
-    "id": 120,
-    "name": "Ravindra Jadeja 120",
+    "name": "Nitish Rana",
+    "role": "ALL_ROUNDER",
     "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 36,
-    "rating": 92,
-    "amount": 7248029
+    "team": "RR",
+    "amount": 4.2
   },
   {
-    "id": 121,
-    "name": "Shikhar Dhawan 121",
+    "name": "Tushar Deshpande",
+    "role": "BOWLER",
     "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 38,
-    "rating": 74,
-    "amount": 176454744
+    "team": "RR",
+    "amount": 6.5
   },
   {
-    "id": 122,
-    "name": "David Warner 122",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 29,
-    "rating": 81,
-    "amount": 33321350
-  },
-  {
-    "id": 123,
-    "name": "Shubman Gill 123",
+    "name": "Shubham Dubey",
+    "role": "BATSMAN",
     "country": "India",
-    "team": "GT",
-    "role": "Batsman",
-    "age": 23,
-    "rating": 75,
-    "amount": 51198824
+    "team": "RR",
+    "amount": 0.8
   },
   {
-    "id": 124,
-    "name": "Faf du Plessis 124",
+    "name": "Yudhvir Charak",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "RR",
+    "amount": 0.35
+  },
+  {
+    "name": "Fazalhaq Farooqi",
+    "role": "BOWLER",
+    "country": "Sri Lanka",
+    "team": "RR",
+    "amount": 2.0
+  },
+  {
+    "name": "Vaibhav Suryavanshi",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "RR",
+    "amount": 1.1
+  },
+  {
+    "name": "Kwena Maphaka",
+    "role": "BOWLER",
     "country": "South Africa",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 35,
-    "rating": 86,
-    "amount": 167984651
+    "team": "RR",
+    "amount": 0.75
   },
   {
-    "id": 125,
-    "name": "Ravindra Jadeja 125",
+    "name": "Ashok Sharma",
+    "role": "BOWLER",
     "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 31,
-    "rating": 80,
-    "amount": 163055661
+    "team": "RR",
+    "amount": 0.3
   },
   {
-    "id": 126,
-    "name": "Rohit Sharma 126",
+    "name": "Kunal Singh Rathore",
+    "role": "BATSMAN",
     "country": "India",
-    "team": "MI",
-    "role": "Batsman",
-    "age": 32,
-    "rating": 82,
-    "amount": 32590092
+    "team": "RR",
+    "amount": 0.3
   },
   {
-    "id": 127,
-    "name": "Jos Buttler 127",
+    "name": "Heinrich Klaasen",
+    "role": "BATSMAN",
+    "country": "South Africa",
+    "team": "SRH",
+    "amount": 23.0
+  },
+  {
+    "name": "Pat Cummins",
+    "role": "BOWLER",
+    "country": "Australia",
+    "team": "SRH",
+    "amount": 18.0
+  },
+  {
+    "name": "Abhishek Sharma",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "SRH",
+    "amount": 14.0
+  },
+  {
+    "name": "Travis Head",
+    "role": "BATSMAN",
+    "country": "Australia",
+    "team": "SRH",
+    "amount": 14.0
+  },
+  {
+    "name": "Nitish Kumar Reddy",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "SRH",
+    "amount": 6.0
+  },
+  {
+    "name": "Mohammad Shami",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "SRH",
+    "amount": 10.0
+  },
+  {
+    "name": "Harshal Patel",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "SRH",
+    "amount": 8.0
+  },
+  {
+    "name": "Ishan Kishan",
+    "role": "WICKETKEEPER",
+    "country": "India",
+    "team": "SRH",
+    "amount": 11.25
+  },
+  {
+    "name": "Rahul Chahar",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "SRH",
+    "amount": 3.2
+  },
+  {
+    "name": "Adam Zampa",
+    "role": "BOWLER",
+    "country": "Australia",
+    "team": "SRH",
+    "amount": 2.4
+  },
+  {
+    "name": "Atharva Taide",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "SRH",
+    "amount": 0.3
+  },
+  {
+    "name": "Abhinav Manohar",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "SRH",
+    "amount": 3.2
+  },
+  {
+    "name": "Simarjeet Singh",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "SRH",
+    "amount": 1.5
+  },
+  {
+    "name": "Zeeshan Ansari",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "SRH",
+    "amount": 0.4
+  },
+  {
+    "name": "Jaydev Unadkat",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "SRH",
+    "amount": 1.0
+  },
+  {
+    "name": "Brydon Carse",
+    "role": "ALL_ROUNDER",
     "country": "England",
-    "team": "RR",
-    "role": "Batsman",
-    "age": 38,
-    "rating": 82,
-    "amount": 160164594
-  },
-  {
-    "id": 128,
-    "name": "Hardik Pandya 128",
-    "country": "India",
-    "team": "MI",
-    "role": "All-Rounder",
-    "age": 21,
-    "rating": 83,
-    "amount": 80404843
-  },
-  {
-    "id": 129,
-    "name": "Pat Cummins 129",
-    "country": "Australia",
     "team": "SRH",
-    "role": "Bowler",
-    "age": 22,
-    "rating": 80,
-    "amount": 13548160
+    "amount": 1.0
   },
   {
-    "id": 130,
-    "name": "David Warner 130",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 20,
-    "rating": 70,
-    "amount": 51454595
+    "name": "Kamindu Mendis",
+    "role": "ALL_ROUNDER",
+    "country": "Sri Lanka",
+    "team": "SRH",
+    "amount": 0.75
   },
   {
-    "id": 131,
-    "name": "Sanju Samson 131",
-    "country": "India",
-    "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 20,
-    "rating": 79,
-    "amount": 188122617
-  },
-  {
-    "id": 132,
-    "name": "David Warner 132",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 33,
-    "rating": 91,
-    "amount": 75408117
-  },
-  {
-    "id": 133,
-    "name": "Bhuvneshwar Kumar 133",
+    "name": "Aniket Verma",
+    "role": "BATSMAN",
     "country": "India",
     "team": "SRH",
-    "role": "Bowler",
-    "age": 31,
-    "rating": 90,
-    "amount": 192475357
+    "amount": 0.3
   },
   {
-    "id": 134,
-    "name": "Pat Cummins 134",
-    "country": "Australia",
+    "name": "Eshan Malinga",
+    "role": "BOWLER",
+    "country": "Sri Lanka",
     "team": "SRH",
-    "role": "Bowler",
-    "age": 25,
-    "rating": 79,
-    "amount": 27505669
+    "amount": 1.2
   },
   {
-    "id": 135,
-    "name": "Ravindra Jadeja 135",
+    "name": "Sachin Baby",
+    "role": "BATSMAN",
     "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 27,
-    "rating": 79,
-    "amount": 170864016
-  },
-  {
-    "id": 136,
-    "name": "Pat Cummins 136",
-    "country": "Australia",
     "team": "SRH",
-    "role": "Bowler",
-    "age": 33,
-    "rating": 85,
-    "amount": 100250829
+    "amount": 0.3
   },
   {
-    "id": 137,
-    "name": "Sanju Samson 137",
+    "name": "Shashank Singh",
+    "role": "BATSMAN",
     "country": "India",
-    "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 24,
-    "rating": 91,
-    "amount": 181828389
+    "team": "PSKB",
+    "amount": 5.5
   },
   {
-    "id": 138,
-    "name": "Sunil Narine 138",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "Bowler",
-    "age": 36,
-    "rating": 77,
-    "amount": 166625780
+    "name": "Prabhsimran Singh",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "PSKB",
+    "amount": 4.0
   },
   {
-    "id": 139,
-    "name": "Rashid Khan 139",
+    "name": "Arshdeep Singh",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "PSKB",
+    "amount": 18.0
+  },
+  {
+    "name": "Shreyas Iyer",
+    "role": "WICKETKEEPER",
+    "country": "India",
+    "team": "PSKB",
+    "amount": 26.75
+  },
+  {
+    "name": "Yuzvendra Chahal",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "PSKB",
+    "amount": 18.0
+  },
+  {
+    "name": "Marcus Stoinis",
+    "role": "ALL_ROUNDER",
+    "country": "Australia",
+    "team": "PSKB",
+    "amount": 11.0
+  },
+  {
+    "name": "Glenn Maxwell",
+    "role": "ALL_ROUNDER",
+    "country": "Australia",
+    "team": "PSKB",
+    "amount": 4.2
+  },
+  {
+    "name": "Nehal Wadhera",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "PSKB",
+    "amount": 4.2
+  },
+  {
+    "name": "Harpreet Brar",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "PSKB",
+    "amount": 1.5
+  },
+  {
+    "name": "Vishnu Vinod",
+    "role": "WICKETKEEPER",
+    "country": "India",
+    "team": "PSKB",
+    "amount": 0.95
+  },
+  {
+    "name": "Vijaykumar Vyshak",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "PSKB",
+    "amount": 1.8
+  },
+  {
+    "name": "Yash Thakur",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "PSKB",
+    "amount": 1.6
+  },
+  {
+    "name": "Marco Jansen",
+    "role": "ALL_ROUNDER",
+    "country": "South Africa",
+    "team": "PSKB",
+    "amount": 7.0
+  },
+  {
+    "name": "Josh Inglis",
+    "role": "BATSMAN",
+    "country": "Australia",
+    "team": "PSKB",
+    "amount": 2.6
+  },
+  {
+    "name": "Lockie Ferguson",
+    "role": "BOWLER",
+    "country": "New Zealand",
+    "team": "PSKB",
+    "amount": 2.0
+  },
+  {
+    "name": "Azmatullah Omarzai",
+    "role": "ALL_ROUNDER",
     "country": "Afghanistan",
-    "team": "GT",
-    "role": "Bowler",
-    "age": 29,
-    "rating": 77,
-    "amount": 182851665
+    "team": "PSKB",
+    "amount": 2.4
   },
   {
-    "id": 140,
-    "name": "MS Dhoni 140",
+    "name": "Harnoor Pannu",
+    "role": "BATSMAN",
     "country": "India",
-    "team": "CSK",
-    "role": "Wicket Keeper",
-    "age": 31,
-    "rating": 84,
-    "amount": 70574661
+    "team": "PSKB",
+    "amount": 0.3
   },
   {
-    "id": 141,
-    "name": "Ravindra Jadeja 141",
+    "name": "Kuldeep Sen",
+    "role": "BOWLER",
     "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 21,
-    "rating": 74,
-    "amount": 47082901
+    "team": "PSKB",
+    "amount": 0.8
   },
   {
-    "id": 142,
-    "name": "Shikhar Dhawan 142",
+    "name": "Priyansh Arya",
+    "role": "BATSMAN",
     "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 20,
-    "rating": 86,
-    "amount": 77920092
+    "team": "PSKB",
+    "amount": 3.8
   },
   {
-    "id": 143,
-    "name": "Hardik Pandya 143",
+    "name": "Aaron Hardie",
+    "role": "ALL_ROUNDER",
+    "country": "Australia",
+    "team": "PSKB",
+    "amount": 1.25
+  },
+  {
+    "name": "Suryash Shedge",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "PSKB",
+    "amount": 0.3
+  },
+  {
+    "name": "Musheer Khan",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "PSKB",
+    "amount": 0.3
+  },
+  {
+    "name": "Xavier Bartlett",
+    "role": "BOWLER",
+    "country": "Australia",
+    "team": "PSKB",
+    "amount": 0.8
+  },
+  {
+    "name": "Pyla Avinash",
+    "role": "BATSMAN",
+    "country": "India",
+    "team": "PSKB",
+    "amount": 0.3
+  },
+  {
+    "name": "Praveen Dubey",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "PSKB",
+    "amount": 0.3
+  },
+  {
+    "name": "Jasprit Bumrah",
+    "role": "BOWLER",
     "country": "India",
     "team": "MI",
-    "role": "All-Rounder",
-    "age": 29,
-    "rating": 70,
-    "amount": 134625652
+    "amount": 18.0
   },
   {
-    "id": 144,
-    "name": "David Warner 144",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 38,
-    "rating": 72,
-    "amount": 164403703
-  },
-  {
-    "id": 145,
-    "name": "Sanju Samson 145",
-    "country": "India",
-    "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 29,
-    "rating": 95,
-    "amount": 153321152
-  },
-  {
-    "id": 146,
-    "name": "Shikhar Dhawan 146",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 39,
-    "rating": 83,
-    "amount": 193965715
-  },
-  {
-    "id": 147,
-    "name": "MS Dhoni 147",
-    "country": "India",
-    "team": "CSK",
-    "role": "Wicket Keeper",
-    "age": 27,
-    "rating": 82,
-    "amount": 21806526
-  },
-  {
-    "id": 148,
-    "name": "Ravindra Jadeja 148",
-    "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 29,
-    "rating": 81,
-    "amount": 163655772
-  },
-  {
-    "id": 149,
-    "name": "Jos Buttler 149",
-    "country": "England",
-    "team": "RR",
-    "role": "Batsman",
-    "age": 27,
-    "rating": 86,
-    "amount": 125186711
-  },
-  {
-    "id": 150,
-    "name": "Virat Kohli 150",
-    "country": "India",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 32,
-    "rating": 76,
-    "amount": 40114281
-  },
-  {
-    "id": 151,
-    "name": "Ravindra Jadeja 151",
-    "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 30,
-    "rating": 70,
-    "amount": 95273920
-  },
-  {
-    "id": 152,
-    "name": "Andre Russell 152",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "All-Rounder",
-    "age": 24,
-    "rating": 77,
-    "amount": 196925679
-  },
-  {
-    "id": 153,
-    "name": "Shikhar Dhawan 153",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 29,
-    "rating": 84,
-    "amount": 45651142
-  },
-  {
-    "id": 154,
-    "name": "Ravindra Jadeja 154",
-    "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 34,
-    "rating": 75,
-    "amount": 57787398
-  },
-  {
-    "id": 155,
-    "name": "David Warner 155",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 22,
-    "rating": 93,
-    "amount": 145542989
-  },
-  {
-    "id": 156,
-    "name": "Sunil Narine 156",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "Bowler",
-    "age": 31,
-    "rating": 82,
-    "amount": 79496737
-  },
-  {
-    "id": 157,
-    "name": "Faf du Plessis 157",
-    "country": "South Africa",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 37,
-    "rating": 74,
-    "amount": 32327335
-  },
-  {
-    "id": 158,
-    "name": "Kagiso Rabada 158",
-    "country": "South Africa",
-    "team": "PBKS",
-    "role": "Bowler",
-    "age": 21,
-    "rating": 86,
-    "amount": 144322164
-  },
-  {
-    "id": 159,
-    "name": "MS Dhoni 159",
-    "country": "India",
-    "team": "CSK",
-    "role": "Wicket Keeper",
-    "age": 33,
-    "rating": 72,
-    "amount": 56785545
-  },
-  {
-    "id": 160,
-    "name": "Faf du Plessis 160",
-    "country": "South Africa",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 35,
-    "rating": 82,
-    "amount": 70540742
-  },
-  {
-    "id": 161,
-    "name": "Rishabh Pant 161",
-    "country": "India",
-    "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 30,
-    "rating": 91,
-    "amount": 136671267
-  },
-  {
-    "id": 162,
-    "name": "Kagiso Rabada 162",
-    "country": "South Africa",
-    "team": "PBKS",
-    "role": "Bowler",
-    "age": 20,
-    "rating": 75,
-    "amount": 67347359
-  },
-  {
-    "id": 163,
-    "name": "Pat Cummins 163",
-    "country": "Australia",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 26,
-    "rating": 78,
-    "amount": 81737420
-  },
-  {
-    "id": 164,
-    "name": "Andre Russell 164",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "All-Rounder",
-    "age": 37,
-    "rating": 83,
-    "amount": 149084190
-  },
-  {
-    "id": 165,
-    "name": "Pat Cummins 165",
-    "country": "Australia",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 34,
-    "rating": 80,
-    "amount": 13576117
-  },
-  {
-    "id": 166,
-    "name": "Ravindra Jadeja 166",
-    "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 24,
-    "rating": 92,
-    "amount": 159390225
-  },
-  {
-    "id": 167,
-    "name": "Sanju Samson 167",
-    "country": "India",
-    "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 25,
-    "rating": 92,
-    "amount": 78794140
-  },
-  {
-    "id": 168,
-    "name": "KL Rahul 168",
-    "country": "India",
-    "team": "LSG",
-    "role": "Batsman",
-    "age": 35,
-    "rating": 75,
-    "amount": 173522289
-  },
-  {
-    "id": 169,
-    "name": "Ravindra Jadeja 169",
-    "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 23,
-    "rating": 79,
-    "amount": 121207938
-  },
-  {
-    "id": 170,
-    "name": "Sanju Samson 170",
-    "country": "India",
-    "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 34,
-    "rating": 83,
-    "amount": 162004188
-  },
-  {
-    "id": 171,
-    "name": "David Warner 171",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 37,
-    "rating": 79,
-    "amount": 140613707
-  },
-  {
-    "id": 172,
-    "name": "KL Rahul 172",
-    "country": "India",
-    "team": "LSG",
-    "role": "Batsman",
-    "age": 32,
-    "rating": 84,
-    "amount": 14316757
-  },
-  {
-    "id": 173,
-    "name": "David Warner 173",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 28,
-    "rating": 83,
-    "amount": 32627277
-  },
-  {
-    "id": 174,
-    "name": "Sanju Samson 174",
-    "country": "India",
-    "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 31,
-    "rating": 91,
-    "amount": 70847675
-  },
-  {
-    "id": 175,
-    "name": "MS Dhoni 175",
-    "country": "India",
-    "team": "CSK",
-    "role": "Wicket Keeper",
-    "age": 40,
-    "rating": 77,
-    "amount": 75064057
-  },
-  {
-    "id": 176,
-    "name": "Sanju Samson 176",
-    "country": "India",
-    "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 24,
-    "rating": 80,
-    "amount": 4340527
-  },
-  {
-    "id": 177,
-    "name": "Faf du Plessis 177",
-    "country": "South Africa",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 33,
-    "rating": 70,
-    "amount": 28510873
-  },
-  {
-    "id": 178,
-    "name": "Shikhar Dhawan 178",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 28,
-    "rating": 89,
-    "amount": 65427583
-  },
-  {
-    "id": 179,
-    "name": "Virat Kohli 179",
-    "country": "India",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 29,
-    "rating": 92,
-    "amount": 143651026
-  },
-  {
-    "id": 180,
-    "name": "David Warner 180",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 21,
-    "rating": 90,
-    "amount": 74878618
-  },
-  {
-    "id": 181,
-    "name": "Bhuvneshwar Kumar 181",
-    "country": "India",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 37,
-    "rating": 77,
-    "amount": 73199556
-  },
-  {
-    "id": 182,
-    "name": "Rohit Sharma 182",
+    "name": "Suryakumar Yadav",
+    "role": "BATSMAN",
     "country": "India",
     "team": "MI",
-    "role": "Batsman",
-    "age": 29,
-    "rating": 71,
-    "amount": 187477711
+    "amount": 16.35
   },
   {
-    "id": 183,
-    "name": "KL Rahul 183",
+    "name": "Hardik Pandya",
+    "role": "ALL_ROUNDER",
     "country": "India",
-    "team": "LSG",
-    "role": "Batsman",
-    "age": 32,
-    "rating": 82,
-    "amount": 115021683
+    "team": "MI",
+    "amount": 16.35
   },
   {
-    "id": 184,
-    "name": "Shikhar Dhawan 184",
+    "name": "Rohit Sharma",
+    "role": "BATSMAN",
     "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 32,
-    "rating": 88,
-    "amount": 191589698
+    "team": "MI",
+    "amount": 16.3
   },
   {
-    "id": 185,
-    "name": "KL Rahul 185",
+    "name": "Tilak Varma",
+    "role": "BATSMAN",
     "country": "India",
-    "team": "LSG",
-    "role": "Batsman",
-    "age": 20,
-    "rating": 73,
-    "amount": 128229581
+    "team": "MI",
+    "amount": 8.0
   },
   {
-    "id": 186,
-    "name": "Rishabh Pant 186",
+    "name": "Trent Boult",
+    "role": "BOWLER",
+    "country": "New Zealand",
+    "team": "MI",
+    "amount": 12.5
+  },
+  {
+    "name": "Naman Dhir",
+    "role": "ALL_ROUNDER",
     "country": "India",
-    "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 35,
-    "rating": 88,
-    "amount": 154682731
+    "team": "MI",
+    "amount": 5.25
   },
   {
-    "id": 187,
-    "name": "KL Rahul 187",
+    "name": "Robin Minz",
+    "role": "WICKETKEEPER",
     "country": "India",
-    "team": "LSG",
-    "role": "Batsman",
-    "age": 20,
-    "rating": 84,
-    "amount": 2507144
+    "team": "MI",
+    "amount": 0.65
   },
   {
-    "id": 188,
-    "name": "Rashid Khan 188",
+    "name": "Karn Sharma",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "MI",
+    "amount": 0.5
+  },
+  {
+    "name": "Ryan Rickelton",
+    "role": "BATSMAN",
+    "country": "South Africa",
+    "team": "MI",
+    "amount": 1.0
+  },
+  {
+    "name": "Deepak Chahar",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "MI",
+    "amount": 9.25
+  },
+  {
+    "name": "Allah Ghazanfar",
+    "role": "BOWLER",
     "country": "Afghanistan",
-    "team": "GT",
-    "role": "Bowler",
-    "age": 39,
-    "rating": 78,
-    "amount": 130892092
+    "team": "MI",
+    "amount": 4.8
   },
   {
-    "id": 189,
-    "name": "Jos Buttler 189",
+    "name": "Will Jacks",
+    "role": "ALL_ROUNDER",
     "country": "England",
-    "team": "RR",
-    "role": "Batsman",
-    "age": 30,
-    "rating": 74,
-    "amount": 148341093
+    "team": "MI",
+    "amount": 5.25
   },
   {
-    "id": 190,
-    "name": "Shikhar Dhawan 190",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 38,
-    "rating": 71,
-    "amount": 137759217
-  },
-  {
-    "id": 191,
-    "name": "Virat Kohli 191",
-    "country": "India",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 27,
-    "rating": 74,
-    "amount": 143120543
-  },
-  {
-    "id": 192,
-    "name": "Rohit Sharma 192",
+    "name": "Ashwani Kumar",
+    "role": "BOWLER",
     "country": "India",
     "team": "MI",
-    "role": "Batsman",
-    "age": 30,
-    "rating": 87,
-    "amount": 150526441
+    "amount": 0.3
   },
   {
-    "id": 193,
-    "name": "Virat Kohli 193",
-    "country": "India",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 23,
-    "rating": 75,
-    "amount": 135901331
-  },
-  {
-    "id": 194,
-    "name": "Pat Cummins 194",
-    "country": "Australia",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 24,
-    "rating": 79,
-    "amount": 40857562
-  },
-  {
-    "id": 195,
-    "name": "Rishabh Pant 195",
-    "country": "India",
-    "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 36,
-    "rating": 78,
-    "amount": 91847968
-  },
-  {
-    "id": 196,
-    "name": "Pat Cummins 196",
-    "country": "Australia",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 28,
-    "rating": 84,
-    "amount": 144476021
-  },
-  {
-    "id": 197,
-    "name": "Sanju Samson 197",
-    "country": "India",
-    "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 36,
-    "rating": 90,
-    "amount": 179731978
-  },
-  {
-    "id": 198,
-    "name": "Hardik Pandya 198",
-    "country": "India",
+    "name": "Mitchell Santner",
+    "role": "ALL_ROUNDER",
+    "country": "New Zealand",
     "team": "MI",
-    "role": "All-Rounder",
-    "age": 35,
-    "rating": 79,
-    "amount": 78658155
+    "amount": 2.0
   },
   {
-    "id": 199,
-    "name": "Rashid Khan 199",
-    "country": "Afghanistan",
-    "team": "GT",
-    "role": "Bowler",
-    "age": 29,
-    "rating": 77,
-    "amount": 35325341
-  },
-  {
-    "id": 200,
-    "name": "MS Dhoni 200",
-    "country": "India",
-    "team": "CSK",
-    "role": "Wicket Keeper",
-    "age": 25,
-    "rating": 73,
-    "amount": 86174197
-  },
-  {
-    "id": 201,
-    "name": "Sanju Samson 201",
-    "country": "India",
-    "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 29,
-    "rating": 72,
-    "amount": 182565119
-  },
-  {
-    "id": 202,
-    "name": "Sanju Samson 202",
-    "country": "India",
-    "team": "RR",
-    "role": "Wicket Keeper",
-    "age": 38,
-    "rating": 84,
-    "amount": 95555415
-  },
-  {
-    "id": 203,
-    "name": "Virat Kohli 203",
-    "country": "India",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 37,
-    "rating": 70,
-    "amount": 97474503
-  },
-  {
-    "id": 204,
-    "name": "Pat Cummins 204",
-    "country": "Australia",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 33,
-    "rating": 86,
-    "amount": 59984271
-  },
-  {
-    "id": 205,
-    "name": "MS Dhoni 205",
-    "country": "India",
-    "team": "CSK",
-    "role": "Wicket Keeper",
-    "age": 37,
-    "rating": 76,
-    "amount": 177268233
-  },
-  {
-    "id": 206,
-    "name": "Rohit Sharma 206",
-    "country": "India",
-    "team": "MI",
-    "role": "Batsman",
-    "age": 26,
-    "rating": 90,
-    "amount": 167489290
-  },
-  {
-    "id": 207,
-    "name": "Sunil Narine 207",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "Bowler",
-    "age": 34,
-    "rating": 86,
-    "amount": 40495902
-  },
-  {
-    "id": 208,
-    "name": "KL Rahul 208",
-    "country": "India",
-    "team": "LSG",
-    "role": "Batsman",
-    "age": 29,
-    "rating": 86,
-    "amount": 5953384
-  },
-  {
-    "id": 209,
-    "name": "Kagiso Rabada 209",
-    "country": "South Africa",
-    "team": "PBKS",
-    "role": "Bowler",
-    "age": 31,
-    "rating": 92,
-    "amount": 107110652
-  },
-  {
-    "id": 210,
-    "name": "Ravindra Jadeja 210",
-    "country": "India",
-    "team": "CSK",
-    "role": "All-Rounder",
-    "age": 24,
-    "rating": 84,
-    "amount": 71178186
-  },
-  {
-    "id": 211,
-    "name": "Rohit Sharma 211",
-    "country": "India",
-    "team": "MI",
-    "role": "Batsman",
-    "age": 37,
-    "rating": 88,
-    "amount": 88355065
-  },
-  {
-    "id": 212,
-    "name": "Virat Kohli 212",
-    "country": "India",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 32,
-    "rating": 70,
-    "amount": 102540587
-  },
-  {
-    "id": 213,
-    "name": "Jasprit Bumrah 213",
-    "country": "India",
-    "team": "MI",
-    "role": "Bowler",
-    "age": 32,
-    "rating": 85,
-    "amount": 128123458
-  },
-  {
-    "id": 214,
-    "name": "Andre Russell 214",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "All-Rounder",
-    "age": 33,
-    "rating": 91,
-    "amount": 116987915
-  },
-  {
-    "id": 215,
-    "name": "MS Dhoni 215",
-    "country": "India",
-    "team": "CSK",
-    "role": "Wicket Keeper",
-    "age": 21,
-    "rating": 85,
-    "amount": 16017590
-  },
-  {
-    "id": 216,
-    "name": "Virat Kohli 216",
-    "country": "India",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 35,
-    "rating": 91,
-    "amount": 137289121
-  },
-  {
-    "id": 217,
-    "name": "David Warner 217",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 26,
-    "rating": 78,
-    "amount": 104066758
-  },
-  {
-    "id": 218,
-    "name": "Shikhar Dhawan 218",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 20,
-    "rating": 92,
-    "amount": 21465997
-  },
-  {
-    "id": 219,
-    "name": "Jasprit Bumrah 219",
-    "country": "India",
-    "team": "MI",
-    "role": "Bowler",
-    "age": 32,
-    "rating": 92,
-    "amount": 121516320
-  },
-  {
-    "id": 220,
-    "name": "Virat Kohli 220",
-    "country": "India",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 21,
-    "rating": 79,
-    "amount": 69533645
-  },
-  {
-    "id": 221,
-    "name": "Pat Cummins 221",
-    "country": "Australia",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 32,
-    "rating": 95,
-    "amount": 38323962
-  },
-  {
-    "id": 222,
-    "name": "Andre Russell 222",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "All-Rounder",
-    "age": 23,
-    "rating": 82,
-    "amount": 117223052
-  },
-  {
-    "id": 223,
-    "name": "David Warner 223",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 35,
-    "rating": 87,
-    "amount": 32495749
-  },
-  {
-    "id": 224,
-    "name": "Jos Buttler 224",
+    "name": "Reece Topley",
+    "role": "BOWLER",
     "country": "England",
-    "team": "RR",
-    "role": "Batsman",
-    "age": 31,
-    "rating": 78,
-    "amount": 116549615
+    "team": "MI",
+    "amount": 0.75
   },
   {
-    "id": 225,
-    "name": "Faf du Plessis 225",
+    "name": "Shrijith Krishnan",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "MI",
+    "amount": 0.3
+  },
+  {
+    "name": "Raj Bawa",
+    "role": "ALL_ROUNDER",
+    "country": "India",
+    "team": "MI",
+    "amount": 0.3
+  },
+  {
+    "name": "Satyanarayana Raju",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "MI",
+    "amount": 0.3
+  },
+  {
+    "name": "Bevon Jacobs",
+    "role": "BATSMAN",
+    "country": "New Zealand",
+    "team": "MI",
+    "amount": 0.3
+  },
+  {
+    "name": "Arjun Tendulkar",
+    "role": "BOWLER",
+    "country": "India",
+    "team": "MI",
+    "amount": 0.3
+  },
+  {
+    "name": "Lizaad Williams",
+    "role": "BOWLER",
     "country": "South Africa",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 36,
-    "rating": 94,
-    "amount": 35212244
+    "team": "MI",
+    "amount": 0.75
   },
   {
-    "id": 226,
-    "name": "KL Rahul 226",
-    "country": "India",
-    "team": "LSG",
-    "role": "Batsman",
-    "age": 34,
-    "rating": 77,
-    "amount": 105169479
-  },
-  {
-    "id": 227,
-    "name": "Rishabh Pant 227",
-    "country": "India",
-    "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 20,
-    "rating": 75,
-    "amount": 86161066
-  },
-  {
-    "id": 228,
-    "name": "Rashid Khan 228",
-    "country": "Afghanistan",
-    "team": "GT",
-    "role": "Bowler",
-    "age": 26,
-    "rating": 71,
-    "amount": 67898744
-  },
-  {
-    "id": 229,
-    "name": "Jasprit Bumrah 229",
+    "name": "Vignesh Puthur",
+    "role": "ALL_ROUNDER",
     "country": "India",
     "team": "MI",
-    "role": "Bowler",
-    "age": 26,
-    "rating": 86,
-    "amount": 61456182
-  },
-  {
-    "id": 230,
-    "name": "Sunil Narine 230",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "Bowler",
-    "age": 33,
-    "rating": 95,
-    "amount": 180882419
-  },
-  {
-    "id": 231,
-    "name": "Jos Buttler 231",
-    "country": "England",
-    "team": "RR",
-    "role": "Batsman",
-    "age": 36,
-    "rating": 83,
-    "amount": 51411788
-  },
-  {
-    "id": 232,
-    "name": "Pat Cummins 232",
-    "country": "Australia",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 26,
-    "rating": 87,
-    "amount": 191437918
-  },
-  {
-    "id": 233,
-    "name": "Pat Cummins 233",
-    "country": "Australia",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 35,
-    "rating": 73,
-    "amount": 158093614
-  },
-  {
-    "id": 234,
-    "name": "Jos Buttler 234",
-    "country": "England",
-    "team": "RR",
-    "role": "Batsman",
-    "age": 40,
-    "rating": 84,
-    "amount": 137983935
-  },
-  {
-    "id": 235,
-    "name": "MS Dhoni 235",
-    "country": "India",
-    "team": "CSK",
-    "role": "Wicket Keeper",
-    "age": 25,
-    "rating": 79,
-    "amount": 38620672
-  },
-  {
-    "id": 236,
-    "name": "Shikhar Dhawan 236",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 30,
-    "rating": 88,
-    "amount": 121771839
-  },
-  {
-    "id": 237,
-    "name": "Hardik Pandya 237",
-    "country": "India",
-    "team": "MI",
-    "role": "All-Rounder",
-    "age": 25,
-    "rating": 82,
-    "amount": 136345253
-  },
-  {
-    "id": 238,
-    "name": "David Warner 238",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 29,
-    "rating": 76,
-    "amount": 12682806
-  },
-  {
-    "id": 239,
-    "name": "Shikhar Dhawan 239",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 39,
-    "rating": 87,
-    "amount": 49420942
-  },
-  {
-    "id": 240,
-    "name": "David Warner 240",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 21,
-    "rating": 71,
-    "amount": 181147070
-  },
-  {
-    "id": 241,
-    "name": "Shikhar Dhawan 241",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 36,
-    "rating": 94,
-    "amount": 94188266
-  },
-  {
-    "id": 242,
-    "name": "Shikhar Dhawan 242",
-    "country": "India",
-    "team": "PBKS",
-    "role": "Batsman",
-    "age": 30,
-    "rating": 90,
-    "amount": 67249948
-  },
-  {
-    "id": 243,
-    "name": "Faf du Plessis 243",
-    "country": "South Africa",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 22,
-    "rating": 82,
-    "amount": 38698182
-  },
-  {
-    "id": 244,
-    "name": "Hardik Pandya 244",
-    "country": "India",
-    "team": "MI",
-    "role": "All-Rounder",
-    "age": 27,
-    "rating": 95,
-    "amount": 62138534
-  },
-  {
-    "id": 245,
-    "name": "Sunil Narine 245",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "Bowler",
-    "age": 24,
-    "rating": 87,
-    "amount": 133446076
-  },
-  {
-    "id": 246,
-    "name": "Pat Cummins 246",
-    "country": "Australia",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 35,
-    "rating": 72,
-    "amount": 18946525
-  },
-  {
-    "id": 247,
-    "name": "Rishabh Pant 247",
-    "country": "India",
-    "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 26,
-    "rating": 84,
-    "amount": 117493349
-  },
-  {
-    "id": 248,
-    "name": "Jos Buttler 248",
-    "country": "England",
-    "team": "RR",
-    "role": "Batsman",
-    "age": 35,
-    "rating": 90,
-    "amount": 134554952
-  },
-  {
-    "id": 249,
-    "name": "Sunil Narine 249",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "Bowler",
-    "age": 20,
-    "rating": 84,
-    "amount": 88290505
-  },
-  {
-    "id": 250,
-    "name": "Bhuvneshwar Kumar 250",
-    "country": "India",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 34,
-    "rating": 85,
-    "amount": 186334257
-  },
-  {
-    "id": 251,
-    "name": "Rohit Sharma 251",
-    "country": "India",
-    "team": "MI",
-    "role": "Batsman",
-    "age": 33,
-    "rating": 87,
-    "amount": 155695286
-  },
-  {
-    "id": 252,
-    "name": "KL Rahul 252",
-    "country": "India",
-    "team": "LSG",
-    "role": "Batsman",
-    "age": 34,
-    "rating": 88,
-    "amount": 113564302
-  },
-  {
-    "id": 253,
-    "name": "Rohit Sharma 253",
-    "country": "India",
-    "team": "MI",
-    "role": "Batsman",
-    "age": 34,
-    "rating": 90,
-    "amount": 73750078
-  },
-  {
-    "id": 254,
-    "name": "Bhuvneshwar Kumar 254",
-    "country": "India",
-    "team": "SRH",
-    "role": "Bowler",
-    "age": 20,
-    "rating": 95,
-    "amount": 159859544
-  },
-  {
-    "id": 255,
-    "name": "Rishabh Pant 255",
-    "country": "India",
-    "team": "DC",
-    "role": "Wicket Keeper",
-    "age": 24,
-    "rating": 92,
-    "amount": 197150759
-  },
-  {
-    "id": 256,
-    "name": "David Warner 256",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 32,
-    "rating": 94,
-    "amount": 103673777
-  },
-  {
-    "id": 257,
-    "name": "Faf du Plessis 257",
-    "country": "South Africa",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 39,
-    "rating": 76,
-    "amount": 99146354
-  },
-  {
-    "id": 258,
-    "name": "Andre Russell 258",
-    "country": "West Indies",
-    "team": "KKR",
-    "role": "All-Rounder",
-    "age": 39,
-    "rating": 75,
-    "amount": 19136895
-  },
-  {
-    "id": 259,
-    "name": "Faf du Plessis 259",
-    "country": "South Africa",
-    "team": "RCB",
-    "role": "Batsman",
-    "age": 34,
-    "rating": 91,
-    "amount": 111768150
-  },
-  {
-    "id": 260,
-    "name": "David Warner 260",
-    "country": "Australia",
-    "team": "DC",
-    "role": "Batsman",
-    "age": 26,
-    "rating": 70,
-    "amount": 10328026
+    "amount": 0.3
   }
 ]
