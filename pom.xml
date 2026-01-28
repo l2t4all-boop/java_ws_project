@@ -12,6 +12,8 @@
         <module>dice_game</module>
         <module>learning_jdbc</module>
         <module>learning_json</module>
+        <module>ipl-stats</module>
+        <module>invoice_gen_service</module>
     </modules>
 
 

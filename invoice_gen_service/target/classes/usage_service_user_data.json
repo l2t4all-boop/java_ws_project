@@ -1,0 +1,44 @@
+{
+  "users": [
+    { "userId": "U1", "name": "Rohan", "email": "rohan@gmail.com" },
+    { "userId": "U2", "name": "Priya", "email": "priya@gmail.com" },
+    { "userId": "U3", "name": "Arjun", "email": "arjun@gmail.com" },
+    { "userId": "U4", "name": "Neha", "email": "neha@gmail.com" },
+    { "userId": "U5", "name": "Vikram", "email": "vikram@gmail.com" }
+  ],
+
+  "services": [
+    { "serviceId": "S1", "name": "API Calls", "unitPrice": 0.05, "unit": "request" },
+    { "serviceId": "S2", "name": "Cloud Storage", "unitPrice": 2.0, "unit": "GB" },
+    { "serviceId": "S3", "name": "SMS", "unitPrice": 0.10, "unit": "message" },
+    { "serviceId": "S4", "name": "Email Service", "unitPrice": 0.02, "unit": "email" },
+    { "serviceId": "S5", "name": "Video Streaming", "unitPrice": 5.0, "unit": "hour" }
+  ],
+
+  "usageRecords": [
+    { "userId": "U1", "serviceId": "S1", "units": 1200 },
+    { "userId": "U1", "serviceId": "S2", "units": 15 },
+    { "userId": "U1", "serviceId": "S3", "units": 60 },
+    { "userId": "U1", "serviceId": "S4", "units": 200 },
+
+    { "userId": "U2", "serviceId": "S1", "units": 800 },
+    { "userId": "U2", "serviceId": "S2", "units": 10 },
+    { "userId": "U2", "serviceId": "S3", "units": 40 },
+    { "userId": "U2", "serviceId": "S5", "units": 3 },
+
+    { "userId": "U3", "serviceId": "S1", "units": 1500 },
+    { "userId": "U3", "serviceId": "S4", "units": 300 },
+    { "userId": "U3", "serviceId": "S5", "units": 5 },
+
+    { "userId": "U4", "serviceId": "S2", "units": 25 },
+    { "userId": "U4", "serviceId": "S3", "units": 100 },
+    { "userId": "U4", "serviceId": "S4", "units": 400 },
+
+    { "userId": "U5", "serviceId": "S1", "units": 500 },
+    { "userId": "U5", "serviceId": "S2", "units": 8 },
+    { "userId": "U5", "serviceId": "S5", "units": 2 }
+  ]
+}
+
+
+

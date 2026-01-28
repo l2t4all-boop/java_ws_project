@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Rohan",
+    "age": 28,
+    "city": "Bangalore",
+    "interests": ["Movies", "Music", "Gym", "Travel"]
+  },
+  {
+    "name": "Priya",
+    "age": 27,
+    "city": "Bangalore",
+    "interests": ["Movies", "Music", "Yoga", "Cooking"]
+  },
+  {
+    "name": "Kavya",
+    "age": 26,
+    "city": "Bangalore",
+    "interests": ["Gym", "Travel", "Movies", "Photography"]
+  },
+  {
+    "name": "Neha",
+    "age": 31,
+    "city": "Mumbai",
+    "interests": ["Travel", "Music", "Food", "Blogging"]
+  },
+  {
+    "name": "Pooja",
+    "age": 29,
+    "city": "Delhi",
+    "interests": ["Cooking", "Music", "Reading", "Yoga"]
+  },
+  {
+    "name": "Arjun",
+    "age": 30,
+    "city": "Bangalore",
+    "interests": ["Gym", "Movies", "Travel", "Tech"]
+  },
+  {
+    "name": "Amit",
+    "age": 35,
+    "city": "Hyderabad",
+    "interests": ["Finance", "Stock Market", "Travel", "Reading"]
+  },
+  {
+    "name": "Suresh",
+    "age": 32,
+    "city": "Chennai",
+    "interests": ["Movies", "Cricket", "Music", "Fitness"]
+  },
+  {
+    "name": "Vikram",
+    "age": 28,
+    "city": "Bangalore",
+    "interests": ["Gaming", "Movies", "Tech", "Music"]
+  },
+  {
+    "name": "Meera",
+    "age": 25,
+    "city": "Pune",
+    "interests": ["Yoga", "Travel", "Photography", "Music"]
+  }
+]

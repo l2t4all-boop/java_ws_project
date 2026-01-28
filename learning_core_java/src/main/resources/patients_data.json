@@ -1,0 +1,102 @@
+[
+  {
+    "patientName": "John Doe",
+    "severity": 5,
+    "age": 45
+  },
+  {
+    "patientName": "Sarah Miller",
+    "severity": 1,
+    "age": 28
+  },
+  {
+    "patientName": "Michael Chen",
+    "severity": 4,
+    "age": 62
+  },
+  {
+    "patientName": "Emily Rodriguez",
+    "severity": 2,
+    "age": 34
+  },
+  {
+    "patientName": "David Thompson",
+    "severity": 5,
+    "age": 55
+  },
+  {
+    "patientName": "Lisa Anderson",
+    "severity": 3,
+    "age": 41
+  },
+  {
+    "patientName": "Robert Wilson",
+    "severity": 1,
+    "age": 19
+  },
+  {
+    "patientName": "Jennifer Martinez",
+    "severity": 4,
+    "age": 58
+  },
+  {
+    "patientName": "James Taylor",
+    "severity": 2,
+    "age": 25
+  },
+  {
+    "patientName": "Amanda Brown",
+    "severity": 5,
+    "age": 70
+  },
+  {
+    "patientName": "Christopher Lee",
+    "severity": 1,
+    "age": 22
+  },
+  {
+    "patientName": "Patricia Garcia",
+    "severity": 3,
+    "age": 47
+  },
+  {
+    "patientName": "Daniel White",
+    "severity": 4,
+    "age": 65
+  },
+  {
+    "patientName": "Mary Johnson",
+    "severity": 2,
+    "age": 31
+  },
+  {
+    "patientName": "Thomas Jackson",
+    "severity": 5,
+    "age": 48
+  },
+  {
+    "patientName": "Barbara Davis",
+    "severity": 1,
+    "age": 29
+  },
+  {
+    "patientName": "Charles Moore",
+    "severity": 3,
+    "age": 52
+  },
+  {
+    "patientName": "Nancy Harris",
+    "severity": 4,
+    "age": 60
+  },
+  {
+    "patientName": "Joseph Martin",
+    "severity": 2,
+    "age": 38
+  },
+  {
+    "patientName": "Karen Thompson",
+    "severity": 3,
+    "age": 44
+  }
+]
