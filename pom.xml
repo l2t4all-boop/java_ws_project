@@ -14,6 +14,7 @@
         <module>learning_json</module>
         <module>ipl-stats</module>
         <module>invoice_gen_service</module>
+        <module>employee-app</module>
     </modules>
 
 
