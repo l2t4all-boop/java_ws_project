@@ -54,6 +54,29 @@
             opacity: 0.9;
         }
 
+        .github-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.2);
+            padding: 12px 24px;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s ease;
+        }
+
+        .github-link:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .github-link svg {
+            width: 24px;
+            height: 24px;
+            fill: white;
+        }
+
         .stats-overview {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -84,6 +107,177 @@
             color: var(--text-light);
             font-size: 1rem;
             margin-top: 5px;
+        }
+
+        /* Maven Section */
+        .maven-section {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .maven-section h2 {
+            color: var(--text-dark);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .maven-section h2 img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .maven-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .maven-card {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 20px;
+            border-left: 4px solid var(--primary);
+        }
+
+        .maven-card h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        .maven-card p {
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .maven-card code {
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-family: 'Consolas', monospace;
+            font-size: 0.9rem;
+        }
+
+        .module-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .module-list li {
+            padding: 8px 12px;
+            background: white;
+            border-radius: 6px;
+            margin-bottom: 6px;
+            font-family: 'Consolas', monospace;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .module-list li::before {
+            content: "📦";
+            font-size: 0.8rem;
+        }
+
+        /* Libraries Section */
+        .libraries-section {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .libraries-section h2 {
+            color: var(--text-dark);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .libraries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .library-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .library-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .library-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .library-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--text-dark);
+            margin-bottom: 8px;
+        }
+
+        .library-version {
+            background: var(--primary);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+
+        .library-desc {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .library-used-in {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .library-used-in span {
+            font-size: 0.75rem;
+            color: var(--text-light);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .used-in-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .used-in-tag {
+            background: white;
+            color: var(--text-dark);
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            border: 1px solid #e2e8f0;
         }
 
         .projects-grid {
@@ -148,6 +342,16 @@
             color: var(--text-dark);
             line-height: 1.6;
             margin-bottom: 20px;
+        }
+
+        .artifact-info {
+            background: #f1f5f9;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-family: 'Consolas', monospace;
+            font-size: 0.85rem;
+            color: var(--text-light);
         }
 
         .programs-section h4 {
@@ -358,6 +562,12 @@
         <header>
             <h1>☕ Java Workshop 2026</h1>
             <p>Project Status Dashboard for Participants</p>
+            <a href="https://github.com/l2t4all-boop/java_ws_project" target="_blank" class="github-link">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                View on GitHub
+            </a>
         </header>
 
         <!-- Overview Statistics -->
@@ -375,8 +585,103 @@
                 <div class="stat-label">Real-world Apps</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number">3</div>
-                <div class="stat-label">Learning Projects</div>
+                <div class="stat-number">2</div>
+                <div class="stat-label">Libraries Used</div>
+            </div>
+        </div>
+
+        <!-- Maven Multi-Module Section -->
+        <div class="maven-section">
+            <h2>
+                <svg width="40" height="40" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#f26d22" d="M64 0L0 32v64l64 32 64-32V32L64 0z"/>
+                    <path fill="#fff" d="M64 15L15 40v48l49 25 49-25V40L64 15zm0 10l35 18v36L64 97 29 79V43l35-18z"/>
+                </svg>
+                Maven Multi-Module Project
+            </h2>
+            <div class="maven-info">
+                <div class="maven-card">
+                    <h3>Parent POM Configuration</h3>
+                    <p><strong>Group ID:</strong> <code>com.l2t</code></p>
+                    <p><strong>Artifact ID:</strong> <code>java_ws_project</code></p>
+                    <p><strong>Version:</strong> <code>1.0.0</code></p>
+                    <p><strong>Packaging:</strong> <code>pom</code></p>
+                    <p><strong>Java Version:</strong> <code>25</code></p>
+                </div>
+                <div class="maven-card">
+                    <h3>Project Modules</h3>
+                    <p>All modules inherit from the parent POM and share common configurations.</p>
+                    <ul class="module-list">
+                        <li>learning_core_java <span style="color:#64748b;font-size:0.8rem">(lcj)</span></li>
+                        <li>dice_game <span style="color:#64748b;font-size:0.8rem">(dg)</span></li>
+                        <li>learning_jdbc</li>
+                        <li>learning_json</li>
+                        <li>ipl-stats</li>
+                        <li>invoice_gen_service</li>
+                        <li>employee-app</li>
+                    </ul>
+                </div>
+                <div class="maven-card">
+                    <h3>Build Commands</h3>
+                    <p>Common Maven commands for the project:</p>
+                    <p style="margin-top:10px"><code>mvn clean install</code><br><span style="font-size:0.85rem;color:#64748b">Build all modules</span></p>
+                    <p style="margin-top:10px"><code>mvn -pl module-name compile</code><br><span style="font-size:0.85rem;color:#64748b">Build specific module</span></p>
+                    <p style="margin-top:10px"><code>mvn exec:java -pl module</code><br><span style="font-size:0.85rem;color:#64748b">Run a module</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Libraries Section -->
+        <div class="libraries-section">
+            <h2>📚 Libraries & Dependencies</h2>
+            <div class="libraries-grid">
+                <div class="library-card">
+                    <div class="library-icon">🔧</div>
+                    <div class="library-name">Lombok</div>
+                    <div class="library-version">v1.18.42</div>
+                    <div class="library-desc">
+                        Java annotation library that automatically generates boilerplate code like getters, setters, constructors, toString, equals, and hashCode methods.
+                    </div>
+                    <div class="library-used-in">
+                        <span>USED IN:</span>
+                        <div class="used-in-tags">
+                            <span class="used-in-tag">learning_core_java</span>
+                            <span class="used-in-tag">ipl-stats</span>
+                            <span class="used-in-tag">invoice_gen_service</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="library-card">
+                    <div class="library-icon">📋</div>
+                    <div class="library-name">Jackson Databind</div>
+                    <div class="library-version">v2.17.1</div>
+                    <div class="library-desc">
+                        High-performance JSON processor for Java. Provides functionality for reading and writing JSON, converting between JSON and Java objects (POJOs).
+                    </div>
+                    <div class="library-used-in">
+                        <span>USED IN:</span>
+                        <div class="used-in-tags">
+                            <span class="used-in-tag">learning_json</span>
+                            <span class="used-in-tag">learning_core_java</span>
+                            <span class="used-in-tag">ipl-stats</span>
+                            <span class="used-in-tag">invoice_gen_service</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="library-card">
+                    <div class="library-icon">☕</div>
+                    <div class="library-name">Java SE 25</div>
+                    <div class="library-version">JDK 25</div>
+                    <div class="library-desc">
+                        Latest Java Development Kit with modern features including Records, Pattern Matching, Virtual Threads, and enhanced Stream API capabilities.
+                    </div>
+                    <div class="library-used-in">
+                        <span>USED IN:</span>
+                        <div class="used-in-tags">
+                            <span class="used-in-tag">All Modules</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -515,6 +820,9 @@
                     <div class="project-badge">6 Classes</div>
                 </div>
                 <div class="project-body">
+                    <div class="artifact-info">
+                        artifactId: employee-app | No external dependencies
+                    </div>
                     <p class="project-description">
                         A complete Employee Management System with full CRUD operations. Demonstrates service layer architecture with both in-memory and database implementations.
                     </p>
@@ -546,6 +854,9 @@
                     <div class="project-badge">7 Classes</div>
                 </div>
                 <div class="project-body">
+                    <div class="artifact-info">
+                        artifactId: invoice_gen_service | Lombok + Jackson
+                    </div>
                     <p class="project-description">
                         Invoice generation service that calculates and generates invoices based on user service usage. Reads data from JSON files and uses streams for data processing.
                     </p>
@@ -578,6 +889,9 @@
                     <div class="project-badge">6 Classes</div>
                 </div>
                 <div class="project-body">
+                    <div class="artifact-info">
+                        artifactId: ipl-stats | Lombok + Jackson
+                    </div>
                     <p class="project-description">
                         IPL (Indian Premier League) cricket statistics analyzer. Processes player data to generate team statistics, spending analysis, and player groupings.
                     </p>
@@ -609,6 +923,9 @@
                     <div class="project-badge">1 Class</div>
                 </div>
                 <div class="project-body">
+                    <div class="artifact-info">
+                        artifactId: dg | No external dependencies
+                    </div>
                     <p class="project-description">
                         An interactive console-based dice guessing game. Players have 3 attempts to guess a randomly generated number between 1-6.
                     </p>
@@ -635,6 +952,9 @@
                     <div class="project-badge">6 Classes</div>
                 </div>
                 <div class="project-body">
+                    <div class="artifact-info">
+                        artifactId: learning_json | Jackson Databind
+                    </div>
                     <p class="project-description">
                         JSON processing tutorial using Jackson library. Demonstrates serialization and deserialization of Java objects to/from JSON format.
                     </p>
@@ -665,6 +985,9 @@
                     <div class="project-badge">Setup Only</div>
                 </div>
                 <div class="project-body">
+                    <div class="artifact-info">
+                        artifactId: learning_jdbc | Dependencies TBD
+                    </div>
                     <p class="project-description">
                         JDBC (Java Database Connectivity) learning project. Currently under setup - will contain database connectivity and SQL operation examples.
                     </p>
