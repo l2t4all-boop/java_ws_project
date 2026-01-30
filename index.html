@@ -541,6 +541,66 @@
         .legend-dot.game { background: linear-gradient(135deg, #f59e0b, #d97706); }
         .legend-dot.setup { background: linear-gradient(135deg, #6b7280, #4b5563); }
 
+        /* Code Stats Section */
+        .code-stats-section {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .code-stats-section h2 {
+            color: var(--text-dark);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .code-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+        }
+
+        .code-stat-item {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease;
+        }
+
+        .code-stat-item:hover {
+            transform: scale(1.05);
+        }
+
+        .code-stat-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .code-stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .code-stat-label {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .code-stat-item.highlight {
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+            border-color: #93c5fd;
+        }
+
+        .code-stat-item.highlight .code-stat-number {
+            color: #1d4ed8;
+        }
+
         @media (max-width: 768px) {
             .projects-grid {
                 grid-template-columns: 1fr;
@@ -587,6 +647,53 @@
             <div class="stat-card">
                 <div class="stat-number">2</div>
                 <div class="stat-label">Libraries Used</div>
+            </div>
+        </div>
+
+        <!-- Code Statistics Section -->
+        <div class="code-stats-section">
+            <h2>Code Statistics</h2>
+            <div class="code-stats-grid">
+                <div class="code-stat-item highlight">
+                    <div class="code-stat-icon">📄</div>
+                    <div class="code-stat-number">4,463</div>
+                    <div class="code-stat-label">Lines of Code</div>
+                </div>
+                <div class="code-stat-item">
+                    <div class="code-stat-icon">📦</div>
+                    <div class="code-stat-number">151</div>
+                    <div class="code-stat-label">Java Files</div>
+                </div>
+                <div class="code-stat-item">
+                    <div class="code-stat-icon">🏛️</div>
+                    <div class="code-stat-number">178</div>
+                    <div class="code-stat-label">Classes</div>
+                </div>
+                <div class="code-stat-item">
+                    <div class="code-stat-icon">🔌</div>
+                    <div class="code-stat-number">16</div>
+                    <div class="code-stat-label">Interfaces</div>
+                </div>
+                <div class="code-stat-item">
+                    <div class="code-stat-icon">📋</div>
+                    <div class="code-stat-number">5</div>
+                    <div class="code-stat-label">Enums</div>
+                </div>
+                <div class="code-stat-item">
+                    <div class="code-stat-icon">⚡</div>
+                    <div class="code-stat-number">0</div>
+                    <div class="code-stat-label">Records</div>
+                </div>
+                <div class="code-stat-item highlight">
+                    <div class="code-stat-icon">⚙️</div>
+                    <div class="code-stat-number">325</div>
+                    <div class="code-stat-label">Methods</div>
+                </div>
+                <div class="code-stat-item">
+                    <div class="code-stat-icon">🚀</div>
+                    <div class="code-stat-number">86</div>
+                    <div class="code-stat-label">Main Methods</div>
+                </div>
             </div>
         </div>
 
