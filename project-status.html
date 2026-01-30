@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Workshop 2026 - Project Status</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --secondary: #1e40af;
+            --success: #16a34a;
+            --warning: #ca8a04;
+            --danger: #dc2626;
+            --bg-dark: #1f2937;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --text-dark: #1f2937;
+            --text-light: #64748b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .stats-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        }
+
+        .project-header {
+            padding: 20px 25px;
+            color: white;
+            position: relative;
+        }
+
+        .project-header.app { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+        .project-header.learning { background: linear-gradient(135deg, #10b981, #059669); }
+        .project-header.game { background: linear-gradient(135deg, #f59e0b, #d97706); }
+        .project-header.setup { background: linear-gradient(135deg, #6b7280, #4b5563); }
+
+        .project-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .project-type {
+            font-size: 0.85rem;
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .project-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: rgba(255,255,255,0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        .project-body {
+            padding: 25px;
+        }
+
+        .project-description {
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .programs-section h4 {
+            color: var(--text-dark);
+            margin-bottom: 12px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .programs-section h4::before {
+            content: "📁";
+        }
+
+        .programs-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .program-tag {
+            background: #e0e7ff;
+            color: #3730a3;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-family: 'Consolas', monospace;
+        }
+
+        .program-tag.main {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .features-list li {
+            padding: 8px 0;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            border-bottom: 1px solid #f1f5f9;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .features-list li:last-child {
+            border-bottom: none;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .large-project {
+            grid-column: 1 / -1;
+        }
+
+        .large-project .project-body {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .topic-section {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .topic-section h4 {
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .topic-programs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+        }
+
+        .topic-tag {
+            background: white;
+            color: var(--text-dark);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-family: 'Consolas', monospace;
+            border: 1px solid #e2e8f0;
+        }
+
+        .progress-section {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .progress-section h2 {
+            color: var(--text-dark);
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .progress-bars {
+            display: grid;
+            gap: 20px;
+        }
+
+        .progress-item {
+            display: grid;
+            grid-template-columns: 200px 1fr 60px;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .progress-label {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .progress-bar {
+            height: 12px;
+            background: #e2e8f0;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 6px;
+            transition: width 0.5s ease;
+        }
+
+        .progress-fill.complete { background: linear-gradient(90deg, #10b981, #059669); }
+        .progress-fill.high { background: linear-gradient(90deg, #3b82f6, #1d4ed8); }
+        .progress-fill.medium { background: linear-gradient(90deg, #f59e0b, #d97706); }
+        .progress-fill.low { background: linear-gradient(90deg, #ef4444, #dc2626); }
+
+        .progress-value {
+            text-align: right;
+            font-weight: bold;
+            color: var(--text-light);
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 30px;
+            opacity: 0.9;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .legend-dot {
+            width: 16px;
+            height: 16px;
+            border-radius: 4px;
+        }
+
+        .legend-dot.app { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
+        .legend-dot.learning { background: linear-gradient(135deg, #10b981, #059669); }
+        .legend-dot.game { background: linear-gradient(135deg, #f59e0b, #d97706); }
+        .legend-dot.setup { background: linear-gradient(135deg, #6b7280, #4b5563); }
+
+        @media (max-width: 768px) {
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .progress-item {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>☕ Java Workshop 2026</h1>
+            <p>Project Status Dashboard for Participants</p>
+        </header>
+
+        <!-- Overview Statistics -->
+        <div class="stats-overview">
+            <div class="stat-card">
+                <div class="stat-number">7</div>
+                <div class="stat-label">Total Projects</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">152+</div>
+                <div class="stat-label">Java Programs</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Real-world Apps</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Learning Projects</div>
+            </div>
+        </div>
+
+        <!-- Progress Section -->
+        <div class="progress-section">
+            <h2>📊 Topic Coverage Progress</h2>
+            <div class="progress-bars">
+                <div class="progress-item">
+                    <span class="progress-label">Core Java Basics</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill complete" style="width: 100%"></div>
+                    </div>
+                    <span class="progress-value">100%</span>
+                </div>
+                <div class="progress-item">
+                    <span class="progress-label">OOP Concepts</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill complete" style="width: 100%"></div>
+                    </div>
+                    <span class="progress-value">100%</span>
+                </div>
+                <div class="progress-item">
+                    <span class="progress-label">Collections Framework</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill complete" style="width: 100%"></div>
+                    </div>
+                    <span class="progress-value">100%</span>
+                </div>
+                <div class="progress-item">
+                    <span class="progress-label">Streams & Lambdas</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill complete" style="width: 100%"></div>
+                    </div>
+                    <span class="progress-value">100%</span>
+                </div>
+                <div class="progress-item">
+                    <span class="progress-label">JSON Processing</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill complete" style="width: 100%"></div>
+                    </div>
+                    <span class="progress-value">100%</span>
+                </div>
+                <div class="progress-item">
+                    <span class="progress-label">JDBC / Database</span>
+                    <div class="progress-bar">
+                        <div class="progress-fill low" style="width: 10%"></div>
+                    </div>
+                    <span class="progress-value">10%</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+            <!-- Learning Core Java - Large Card -->
+            <div class="project-card large-project">
+                <div class="project-header learning">
+                    <div class="project-title">learning_core_java</div>
+                    <div class="project-type">Educational Project</div>
+                    <div class="project-badge">110+ Classes</div>
+                </div>
+                <div class="project-body">
+                    <div class="topic-section">
+                        <h4>📚 Java Basics</h4>
+                        <div class="topic-programs">
+                            <span class="topic-tag">HelloWorld.java</span>
+                            <span class="topic-tag">SumOfTwoNumbers.java</span>
+                            <span class="topic-tag">BiggestOfThreeNumbers.java</span>
+                            <span class="topic-tag">EmiCalculator.java</span>
+                            <span class="topic-tag">MathOperations.java</span>
+                        </div>
+                    </div>
+                    <div class="topic-section">
+                        <h4>🔄 Control Statements</h4>
+                        <div class="topic-programs">
+                            <span class="topic-tag">EvenOrOddNumber.java</span>
+                            <span class="topic-tag">MultiplicationOfTable.java</span>
+                            <span class="topic-tag">SumOfDigits.java</span>
+                            <span class="topic-tag">SwitchStatement.java</span>
+                            <span class="topic-tag">ConvertNumberToPositive.java</span>
+                        </div>
+                    </div>
+                    <div class="topic-section">
+                        <h4>🏗️ OOP Concepts</h4>
+                        <div class="topic-programs">
+                            <span class="topic-tag">Account.java</span>
+                            <span class="topic-tag">CurrentAccount.java</span>
+                            <span class="topic-tag">SavingAccount.java</span>
+                            <span class="topic-tag">AbstractClassExample.java</span>
+                            <span class="topic-tag">InterfaceExample.java</span>
+                            <span class="topic-tag">OverloadingExample.java</span>
+                            <span class="topic-tag">OverrideExample.java</span>
+                            <span class="topic-tag">TypeCastingExample.java</span>
+                        </div>
+                    </div>
+                    <div class="topic-section">
+                        <h4>📦 Collections</h4>
+                        <div class="topic-programs">
+                            <span class="topic-tag">ListExample1-4.java</span>
+                            <span class="topic-tag">MapExample.java</span>
+                            <span class="topic-tag">SetExample.java</span>
+                            <span class="topic-tag">WordCount.java</span>
+                            <span class="topic-tag">ProductManager.java</span>
+                            <span class="topic-tag">CountryManager.java</span>
+                        </div>
+                    </div>
+                    <div class="topic-section">
+                        <h4>🌊 Streams & Lambdas</h4>
+                        <div class="topic-programs">
+                            <span class="topic-tag">StreamExampleManager.java</span>
+                            <span class="topic-tag">LambdaExample.java</span>
+                            <span class="topic-tag">MethodReferenceExample.java</span>
+                            <span class="topic-tag">FunctionalInterface.java</span>
+                            <span class="topic-tag">IplStatsManager.java</span>
+                        </div>
+                    </div>
+                    <div class="topic-section">
+                        <h4>📝 Strings & Methods</h4>
+                        <div class="topic-programs">
+                            <span class="topic-tag">StringExample.java</span>
+                            <span class="topic-tag">StringMethodExample.java</span>
+                            <span class="topic-tag">MethodExample.java</span>
+                            <span class="topic-tag">MathUtils.java</span>
+                            <span class="topic-tag">StaticMethodExamples.java</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Employee App -->
+            <div class="project-card">
+                <div class="project-header app">
+                    <div class="project-title">employee-app</div>
+                    <div class="project-type">Real-world Application</div>
+                    <div class="project-badge">6 Classes</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        A complete Employee Management System with full CRUD operations. Demonstrates service layer architecture with both in-memory and database implementations.
+                    </p>
+                    <div class="programs-section">
+                        <h4>Key Programs</h4>
+                        <div class="programs-list">
+                            <span class="program-tag main">EmployeeManager.java</span>
+                            <span class="program-tag">Employee.java</span>
+                            <span class="program-tag">EmployeeService.java</span>
+                            <span class="program-tag">EmployeeInMemoryImpl.java</span>
+                            <span class="program-tag">EmployeeDbImpl.java</span>
+                            <span class="program-tag">Dept.java</span>
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li>Add, View, Search, Delete employees</li>
+                        <li>Group employees by department</li>
+                        <li>In-memory & database storage</li>
+                        <li>Enum-based department handling</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Invoice Service -->
+            <div class="project-card">
+                <div class="project-header app">
+                    <div class="project-title">invoice_gen_service</div>
+                    <div class="project-type">Real-world Application</div>
+                    <div class="project-badge">7 Classes</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        Invoice generation service that calculates and generates invoices based on user service usage. Reads data from JSON files and uses streams for data processing.
+                    </p>
+                    <div class="programs-section">
+                        <h4>Key Programs</h4>
+                        <div class="programs-list">
+                            <span class="program-tag main">InvoiceServiceManager.java</span>
+                            <span class="program-tag">InvoiceServiceImpl.java</span>
+                            <span class="program-tag">User.java</span>
+                            <span class="program-tag">Service.java</span>
+                            <span class="program-tag">UsageData.java</span>
+                            <span class="program-tag">UserServiceUsageDataDto.java</span>
+                            <span class="program-tag">JsonReaderUtil.java</span>
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li>JSON data processing</li>
+                        <li>Stream-based calculations</li>
+                        <li>Invoice generation logic</li>
+                        <li>DTO pattern implementation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- IPL Stats -->
+            <div class="project-card">
+                <div class="project-header app">
+                    <div class="project-title">ipl-stats</div>
+                    <div class="project-type">Real-world Application</div>
+                    <div class="project-badge">6 Classes</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        IPL (Indian Premier League) cricket statistics analyzer. Processes player data to generate team statistics, spending analysis, and player groupings.
+                    </p>
+                    <div class="programs-section">
+                        <h4>Key Programs</h4>
+                        <div class="programs-list">
+                            <span class="program-tag main">IplStatsManager.java</span>
+                            <span class="program-tag">IplStatsServiceImpl.java</span>
+                            <span class="program-tag">Player.java</span>
+                            <span class="program-tag">PlayerTeamAmountDto.java</span>
+                            <span class="program-tag">IplStatsService.java</span>
+                            <span class="program-tag">JsonReaderUtil.java</span>
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li>Player statistics analysis</li>
+                        <li>Team spending calculations</li>
+                        <li>Stream aggregations</li>
+                        <li>JSON data loading</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Dice Game -->
+            <div class="project-card">
+                <div class="project-header game">
+                    <div class="project-title">dice_game</div>
+                    <div class="project-type">Game Project</div>
+                    <div class="project-badge">1 Class</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        An interactive console-based dice guessing game. Players have 3 attempts to guess a randomly generated number between 1-6.
+                    </p>
+                    <div class="programs-section">
+                        <h4>Key Programs</h4>
+                        <div class="programs-list">
+                            <span class="program-tag main">DiceGame.java</span>
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li>Random number generation</li>
+                        <li>User input handling</li>
+                        <li>Loop and condition logic</li>
+                        <li>Console interaction</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Learning JSON -->
+            <div class="project-card">
+                <div class="project-header learning">
+                    <div class="project-title">learning_json</div>
+                    <div class="project-type">Educational Project</div>
+                    <div class="project-badge">6 Classes</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        JSON processing tutorial using Jackson library. Demonstrates serialization and deserialization of Java objects to/from JSON format.
+                    </p>
+                    <div class="programs-section">
+                        <h4>Key Programs</h4>
+                        <div class="programs-list">
+                            <span class="program-tag main">JsonReadAndWrite.java</span>
+                            <span class="program-tag">User.java</span>
+                            <span class="program-tag">StateInformationService.java</span>
+                            <span class="program-tag">StateDetails.java</span>
+                            <span class="program-tag">CountryStateWrapper.java</span>
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li>Jackson ObjectMapper usage</li>
+                        <li>JSON serialization</li>
+                        <li>JSON deserialization</li>
+                        <li>Formatted output</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Learning JDBC -->
+            <div class="project-card">
+                <div class="project-header setup">
+                    <div class="project-title">learning_jdbc</div>
+                    <div class="project-type">Educational Project</div>
+                    <div class="project-badge">Setup Only</div>
+                </div>
+                <div class="project-body">
+                    <p class="project-description">
+                        JDBC (Java Database Connectivity) learning project. Currently under setup - will contain database connectivity and SQL operation examples.
+                    </p>
+                    <div class="programs-section">
+                        <h4>Planned Topics</h4>
+                        <div class="programs-list">
+                            <span class="program-tag">Database Connection</span>
+                            <span class="program-tag">CRUD Operations</span>
+                            <span class="program-tag">PreparedStatement</span>
+                            <span class="program-tag">ResultSet Handling</span>
+                        </div>
+                    </div>
+                    <ul class="features-list">
+                        <li>Project structure created</li>
+                        <li>Content coming soon</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Legend -->
+        <footer>
+            <p>Project Types Legend:</p>
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-dot app"></div>
+                    <span>Real-world Application</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot learning"></div>
+                    <span>Educational Project</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot game"></div>
+                    <span>Game Project</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-dot setup"></div>
+                    <span>Setup / In Progress</span>
+                </div>
+            </div>
+            <p style="margin-top: 30px; font-size: 0.9rem;">
+                Java Workshop 2026 • Last Updated: January 30, 2026
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
