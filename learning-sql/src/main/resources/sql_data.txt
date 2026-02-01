@@ -1,0 +1,117 @@
+/* =========================
+   IPL DATABASE STRUCTURE
+   ========================= */
+
+DROP TABLE IF EXISTS player;
+DROP TABLE IF EXISTS team;
+
+/* =========================
+   TEAM TABLE
+   ========================= */
+
+CREATE TABLE team (
+    team_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    label VARCHAR(10),
+    city VARCHAR(100),
+    coach VARCHAR(100),
+    home VARCHAR(150)
+);
+
+/* =========================
+   PLAYER TABLE
+   ========================= */
+
+CREATE TABLE player (
+    player_id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    role VARCHAR(50),
+    price BIGINT,
+    team_id INT,
+    FOREIGN KEY (team_id) REFERENCES team(team_id)
+);
+
+/* =========================
+   TEAM INSERTS
+   ========================= */
+
+INSERT INTO team (team_id, name, label, city, coach, home) VALUES
+(1,'Mumbai Indians','MI','Mumbai, Maharashtra','Mahela Jaywardene','Wankhede Stadium, Mumbai'),
+(2,'Delhi Capitals','DC','Delhi, NCR','Ricky Ponting','Feroz Shah Kotla Ground'),
+(3,'Kings XI Punjab','KXIP','Mohali, Punjab','Anil Kumble','IS Bindra Stadium'),
+(4,'Kolkata Knight Riders','KKR','Kolkata, West Bengal','Brendon McCullum','Eden Gardens'),
+(5,'Rajasthan Royals','RR','Jaipur, Rajasthan','Andrew McDonald','Sawai Mansingh Stadium'),
+(6,'Royal Challengers Bangalore','RCB','Bengaluru, Karnataka','Simon Katich','M. Chinnaswamy Stadium'),
+(7,'Sunrisers Hyderabad','SRH','Hyderabad, Telengana','Trevor Bayliss','Rajiv Gandhi International Cricket Stadium'),
+(8,'Chennai Super Kings','CSK','Chennai, Tamil Nadu','Stephen Fleming','M.A. Chidambaram Stadium, Chennai');
+
+/* =========================
+   PLAYER INSERTS
+   ========================= */
+
+/* Mumbai Indians */
+INSERT INTO player (name, role, price, team_id) VALUES
+('Rohit Sharma (R)','Batsman',150000000,1),
+('Suryakumar Yadav (R)','Batsman',32000000,1),
+('Ishan Kishan (R)','Wicket Keeper',62000000,1),
+('Hardik Pandya (R)','All-Rounder',110000000,1),
+('Kieron Pollard (R)','All-Rounder',54000000,1),
+('Jasprit Bumrah (R)','Bowler',70000000,1);
+
+/* Delhi Capitals */
+INSERT INTO player (name, role, price, team_id) VALUES
+('Shreyas Iyer (R)','Batsman',70000000,2),
+('Shikhar Dhawan (R)','Batsman',52000000,2),
+('Prithvi Shaw (R)','Batsman',12000000,2),
+('Rishabh Pant (R)','Wicket Keeper',150000000,2),
+('Marcus Stoinis','All-Rounder',48000000,2),
+('Kagiso Rabada (R)','Bowler',42000000,2);
+
+/* Kings XI Punjab */
+INSERT INTO player (name, role, price, team_id) VALUES
+('KL Rahul (R)','Wicket Keeper',110000000,3),
+('Chris Gayle (R)','Batsman',20000000,3),
+('Mayank Agarwal (R)','Batsman',10000000,3),
+('Glenn Maxwell','All-Rounder',107500000,3),
+('Mohammad Shami (R)','Bowler',48000000,3);
+
+/* Kolkata Knight Riders */
+INSERT INTO player (name, role, price, team_id) VALUES
+('Andre Russell (R)','Batsman',85000000,4),
+('Eoin Morgan','Batsman',52500000,4),
+('Dinesh Karthik (R)','Wicket Keeper',74000000,4),
+('Sunil Narine (R)','All-Rounder',125000000,4),
+('Pat Cummins','All-Rounder',155000000,4),
+('Kuldeep Yadav (R)','Bowler',58000000,4);
+
+/* Rajasthan Royals */
+INSERT INTO player (name, role, price, team_id) VALUES
+('Steve Smith (R)','Batsman',125000000,5),
+('Jos Butler (R)','Wicket Keeper',44000000,5),
+('Sanju Samson (R)','Wicket Keeper',80000000,5),
+('Ben Stokes (R)','All-Rounder',125000000,5),
+('Jofra Archer (R)','Bowler',72000000,5);
+
+/* Royal Challengers Bangalore */
+INSERT INTO player (name, role, price, team_id) VALUES
+('Virat Kohli (R)','Batsman',170000000,6),
+('AB de Villiers (R)','Batsman',110000000,6),
+('Aaron Finch','Batsman',44000000,6),
+('Glenn Maxwell','All-Rounder',100000000,6),
+('Yuzvendra Chahal (R)','Bowler',60000000,6);
+
+/* Sunrisers Hyderabad */
+INSERT INTO player (name, role, price, team_id) VALUES
+('David Warner (R)','Batsman',125000000,7),
+('Kane Williamson','Batsman',30000000,7),
+('Jonny Bairstow (R)','Wicket Keeper',22000000,7),
+('Rashid Khan (R)','Bowler',90000000,7),
+('Bhuvneshwar Kumar (R)','Bowler',85000000,7);
+
+/* Chennai Super Kings */
+INSERT INTO player (name, role, price, team_id) VALUES
+('MS Dhoni (R)','Wicket Keeper',150000000,8),
+('Suresh Raine (R)','Batsman',110000000,8),
+('Ravindra Jadeja (R)','All-Rounder',70000000,8),
+('Dwayne Bravo (R)','All-Rounder',64000000,8),
+('Deepak Chahar (R)','Bowler',8000000,8);
