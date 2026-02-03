@@ -10,13 +10,13 @@
     <modules>
         <module>learning_core_java</module>
         <module>dice_game</module>
-        <module>learning_jdbc</module>
         <module>learning_json</module>
         <module>ipl-stats</module>
         <module>invoice_gen_service</module>
         <module>employee-app</module>
         <module>movie_recommendation</module>
         <module>learning-sql</module>
+        <module>learning_jdbc_app</module>
     </modules>
 
 
