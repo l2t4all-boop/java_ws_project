@@ -17,6 +17,7 @@
         <module>movie_recommendation</module>
         <module>learning-sql</module>
         <module>learning_jdbc_app</module>
+        <module>cbook-server-app</module>
     </modules>
 
 
