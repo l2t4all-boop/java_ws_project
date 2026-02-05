@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="learning_json" />
         <module name="learning-sql" />
+        <module name="learning-spring-core" />
         <module name="lcj" />
         <module name="invoice_gen_service" />
         <module name="dg" />

@@ -18,6 +18,7 @@
         <module>learning-sql</module>
         <module>learning_jdbc_app</module>
         <module>cbook-server-app</module>
+        <module>learning-spring-core</module>
     </modules>
 
 
