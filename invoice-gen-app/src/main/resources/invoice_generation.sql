@@ -1,149 +1,308 @@
- -- Users table
-  CREATE TABLE users (
-      user_id VARCHAR(10) PRIMARY KEY,
-      name VARCHAR(100) NOT NULL,
-      email VARCHAR(255) NOT NULL UNIQUE
-  );
+-- Drop tables if exist (for clean setup)
+DROP TABLE IF EXISTS invoice_line_item;
+DROP TABLE IF EXISTS invoice;
+DROP TABLE IF EXISTS rated_transaction;
+DROP TABLE IF EXISTS usage_records;
+DROP TABLE IF EXISTS services;
+DROP TABLE IF EXISTS users;
 
-  -- Services table
-  CREATE TABLE services (
-      service_id VARCHAR(10) PRIMARY KEY,
-      name VARCHAR(100) NOT NULL,
-      unit_price DECIMAL(10, 2) NOT NULL,
-      unit VARCHAR(50) NOT NULL
-  );
+-- Users table
+CREATE TABLE users (
+    user_id VARCHAR(10) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE
+);
 
-  -- Usage Records table
-  CREATE TABLE usage_records (
-      id SERIAL PRIMARY KEY,
-      user_id VARCHAR(10) NOT NULL REFERENCES users(user_id),
-      service_id VARCHAR(10) NOT NULL REFERENCES services(service_id),
-      units INTEGER NOT NULL,
-      usage_date DATE NOT NULL
-  );
+-- Services table
+CREATE TABLE services (
+    service_id VARCHAR(10) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    unit_price DECIMAL(10, 2) NOT NULL,
+    unit VARCHAR(50) NOT NULL
+);
 
-    CREATE TABLE rated_transaction (
-      id SERIAL PRIMARY KEY,
-      user_id VARCHAR(10) NOT NULL REFERENCES users(user_id),
-      service_id VARCHAR(10) NOT NULL REFERENCES services(service_id),
-      units INTEGER NOT NULL,
-      amount DECIMAL(12, 2) NOT NULL,
-      is_billed BOOLEAN DEFAULT FALSE
-  );
+-- Usage Records table
+CREATE TABLE usage_records (
+    id SERIAL PRIMARY KEY,
+    user_id VARCHAR(10) NOT NULL REFERENCES users(user_id),
+    service_id VARCHAR(10) NOT NULL REFERENCES services(service_id),
+    units INTEGER NOT NULL,
+    usage_date DATE NOT NULL
+);
 
+-- Rated Transaction table
+CREATE TABLE rated_transaction (
+    id SERIAL PRIMARY KEY,
+    user_id VARCHAR(10) NOT NULL REFERENCES users(user_id),
+    service_id VARCHAR(10) NOT NULL REFERENCES services(service_id),
+    units INTEGER NOT NULL,
+    unit_price DECIMAL(12, 2) NOT NULL,
+    amount DECIMAL(12, 2) NOT NULL,
+    is_billed BOOLEAN DEFAULT FALSE,
+    txn_date DATE
+);
 
-    CREATE TABLE invoice (
-      id SERIAL PRIMARY KEY,
-      invoice_number VARCHAR(50) NOT NULL UNIQUE,
-      user_id VARCHAR(10) NOT NULL REFERENCES users(user_id),
-      invoice_date DATE NOT NULL DEFAULT CURRENT_DATE,
-      due_date DATE,
-      total_amount DECIMAL(12, 2) NOT NULL
-  );
+-- Invoice table
+CREATE TABLE invoice (
+    id SERIAL PRIMARY KEY,
+    invoice_number VARCHAR(50) NOT NULL UNIQUE,
+    user_id VARCHAR(10) NOT NULL REFERENCES users(user_id),
+    invoice_date DATE NOT NULL DEFAULT CURRENT_DATE,
+    due_date DATE,
+    total_amount DECIMAL(12, 2) NOT NULL
+);
 
-     CREATE TABLE invoice_line_item (
-      id SERIAL PRIMARY KEY,
-      invoice_id INTEGER NOT NULL REFERENCES invoice(id),
-      service_id VARCHAR(10) NOT NULL REFERENCES services(service_id),
-      units INTEGER NOT NULL,
-      unit_price DECIMAL(10, 2) NOT NULL,
-      line_total DECIMAL(12, 2) NOT NULL
-  );
+-- Invoice Line Item table
+CREATE TABLE invoice_line_item (
+    id SERIAL PRIMARY KEY,
+    invoice_id INTEGER NOT NULL REFERENCES invoice(id),
+    service_id VARCHAR(10) NOT NULL REFERENCES services(service_id),
+    units INTEGER NOT NULL,
+    unit_price DECIMAL(10, 2) NOT NULL,
+    line_total DECIMAL(12, 2) NOT NULL,
+    item_date DATE
+);
 
-    INSERT INTO users (user_id, name, email) VALUES
-    ('U1', 'Rohan', 'rohan@gmail.com'),
-    ('U2', 'Priya', 'priya@gmail.com'),
-    ('U3', 'Arjun', 'arjun@gmail.com'),
-    ('U4', 'Neha', 'neha@gmail.com'),
-    ('U5', 'Vikram', 'vikram@gmail.com');
+-- Indexes
+CREATE INDEX idx_usage_records_user_id ON usage_records(user_id);
+CREATE INDEX idx_usage_records_service_id ON usage_records(service_id);
+CREATE INDEX idx_rated_transaction_user_id ON rated_transaction(user_id);
+CREATE INDEX idx_rated_transaction_is_billed ON rated_transaction(is_billed);
+CREATE INDEX idx_invoice_user_id ON invoice(user_id);
+CREATE INDEX idx_invoice_line_item_invoice_id ON invoice_line_item(invoice_id);
 
+-- Insert Users
+INSERT INTO users (user_id, name, email) VALUES
+('U1', 'Rohan', 'rohan@gmail.com'),
+('U2', 'Priya', 'priya@gmail.com'),
+('U3', 'Arjun', 'arjun@gmail.com'),
+('U4', 'Neha', 'neha@gmail.com'),
+('U5', 'Vikram', 'vikram@gmail.com');
 
-     INSERT INTO services (service_id, name, unit_price, unit) VALUES
-    ('S1', 'API Calls', 0.05, 'request'),
-    ('S2', 'Cloud Storage', 2.00, 'GB'),
-    ('S3', 'SMS', 0.10, 'message'),
-    ('S4', 'Email Service', 0.02, 'email'),
-    ('S5', 'Video Streaming', 5.00, 'hour');
+-- Insert Services
+INSERT INTO services (service_id, name, unit_price, unit) VALUES
+('S1', 'API Calls', 0.05, 'request'),
+('S2', 'Cloud Storage', 2.00, 'GB'),
+('S3', 'SMS', 0.10, 'message'),
+('S4', 'Email Service', 0.02, 'email'),
+('S5', 'Video Streaming', 5.00, 'hour');
 
-
-      INSERT INTO usage_records (user_id, service_id, units, usage_date) VALUES
-    ('U1', 'S1', 300, '2025-12-05'),
-    ('U2', 'S2', 4, '2025-12-07'),
-    ('U3', 'S1', 500, '2025-12-10'),
-    ('U4', 'S3', 40, '2025-12-15'),
-    ('U5', 'S1', 200, '2025-12-20'),
-    ('U1', 'S4', 60, '2025-12-28'),
-    ('U1', 'S2', 5, '2026-01-03'),
-    ('U2', 'S1', 250, '2026-01-06'),
-    ('U3', 'S4', 120, '2026-01-10'),
-    ('U4', 'S2', 8, '2026-01-15'),
-    ('U5', 'S3', 30, '2026-01-20'),
-    ('U2', 'S5', 1, '2026-01-27'),
-    ('U1', 'S3', 25, '2026-02-02'),
-    ('U2', 'S2', 6, '2026-02-06'),
-    ('U3', 'S5', 2, '2026-02-10'),
-    ('U4', 'S4', 140, '2026-02-14'),
-    ('U5', 'S1', 180, '2026-02-20'),
-    ('U1', 'S1', 350, '2026-02-26'),
-    ('U1', 'S4', 90, '2026-03-03'),
-    ('U2', 'S3', 35, '2026-03-06'),
-    ('U3', 'S1', 450, '2026-03-10'),
-    ('U4', 'S2', 9, '2026-03-14'),
-    ('U5', 'S5', 2, '2026-03-18'),
-    ('U2', 'S1', 300, '2026-03-25'),
-     ('U1', 'S1', 300, '2025-12-05'),
-        ('U2', 'S2', 4, '2025-12-07'),
-        ('U3', 'S1', 500, '2025-12-10'),
-        ('U4', 'S3', 40, '2025-12-15'),
-        ('U5', 'S1', 200, '2025-12-20'),
-        ('U1', 'S4', 60, '2025-12-28'),
-        ('U1', 'S2', 5, '2026-01-03'),
-        ('U2', 'S1', 250, '2026-01-06'),
-        ('U3', 'S4', 120, '2026-01-10'),
-        ('U4', 'S2', 8, '2026-01-15'),
-        ('U5', 'S3', 30, '2026-01-20'),
-        ('U2', 'S5', 1, '2026-01-27'),
-        ('U1', 'S3', 25, '2026-02-02'),
-        ('U2', 'S2', 6, '2026-02-06'),
-        ('U3', 'S5', 2, '2026-02-10'),
-        ('U4', 'S4', 140, '2026-02-14'),
-        ('U5', 'S1', 180, '2026-02-20'),
-        ('U1', 'S1', 350, '2026-02-26'),
-        ('U1', 'S4', 90, '2026-03-03'),
-        ('U2', 'S3', 35, '2026-03-06'),
-        ('U3', 'S1', 450, '2026-03-10'),
-        ('U4', 'S2', 9, '2026-03-14'),
-        ('U5', 'S5', 2, '2026-03-18'),
-        ('U2', 'S1', 300, '2026-03-25'),
-         ('U3', 'S4', 120, '2026-01-10'),
-                ('U4', 'S2', 8, '2026-01-15'),
-                ('U5', 'S3', 30, '2026-01-20'),
-                ('U2', 'S5', 1, '2026-01-27'),
-                ('U1', 'S3', 25, '2026-02-02'),
-                ('U2', 'S2', 6, '2026-02-06'),
-                ('U3', 'S5', 2, '2026-02-10'),
-                ('U4', 'S4', 140, '2026-02-14'),
-                ('U5', 'S1', 180, '2026-02-20'),
-                ('U1', 'S1', 350, '2026-02-26'),
-                ('U1', 'S4', 90, '2026-03-03'),
-                ('U2', 'S3', 35, '2026-03-06'),
-                ('U3', 'S1', 450, '2026-03-10'),
-                ('U4', 'S2', 9, '2026-03-14'),
-                 ('U3', 'S4', 120, '2026-01-10'),
-                        ('U4', 'S2', 8, '2026-01-15'),
-                        ('U5', 'S3', 30, '2026-01-20'),
-                        ('U2', 'S5', 1, '2026-01-27'),
-                        ('U1', 'S3', 25, '2026-02-02'),
-                        ('U2', 'S2', 6, '2026-02-06'),
-                        ('U3', 'S5', 2, '2026-02-10'),
-                        ('U4', 'S4', 140, '2026-02-14'),
-                        ('U5', 'S1', 180, '2026-02-20'),
-                        ('U1', 'S1', 350, '2026-02-26'),
-                        ('U1', 'S4', 90, '2026-03-03'),
-                        ('U2', 'S3', 35, '2026-03-06'),
-                        ('U3', 'S1', 450, '2026-03-10'),
-                        ('U4', 'S2', 9, '2026-03-14');
-
-alter table rated_transaction add column if not exists txn_date date;
-alter table invoice_line_item add column if not exists item_date date;
-alter table rated_transaction add column if not exists unit_price DECIMAL(12, 2);
+-- Insert Usage Records
+INSERT INTO usage_records (user_id, service_id, units, usage_date) VALUES
+('U1', 'S1', 300, '2025-12-05'),
+('U2', 'S2', 4, '2025-12-07'),
+('U3', 'S1', 500, '2025-12-10'),
+('U4', 'S3', 40, '2025-12-15'),
+('U5', 'S1', 200, '2025-12-20'),
+('U1', 'S4', 60, '2025-12-28'),
+('U1', 'S2', 5, '2026-01-03'),
+('U2', 'S1', 250, '2026-01-06'),
+('U3', 'S4', 120, '2026-01-10'),
+('U4', 'S2', 8, '2026-01-15'),
+('U5', 'S3', 30, '2026-01-20'),
+('U2', 'S5', 1, '2026-01-27'),
+('U1', 'S3', 25, '2026-02-02'),
+('U2', 'S2', 6, '2026-02-06'),
+('U3', 'S5', 2, '2026-02-10'),
+('U4', 'S4', 140, '2026-02-14'),
+('U5', 'S1', 180, '2026-02-20'),
+('U1', 'S1', 350, '2026-02-26'),
+('U1', 'S4', 90, '2026-03-03'),
+('U2', 'S3', 35, '2026-03-06'),
+('U3', 'S1', 450, '2026-03-10'),
+('U4', 'S2', 9, '2026-03-14'),
+('U5', 'S5', 2, '2026-03-18'),
+('U2', 'S1', 300, '2026-03-25'),
+-- April 2026
+('U1', 'S1', 420, '2026-04-01'),
+('U1', 'S2', 7, '2026-04-02'),
+('U1', 'S3', 35, '2026-04-03'),
+('U1', 'S4', 85, '2026-04-04'),
+('U1', 'S5', 2, '2026-04-05'),
+('U2', 'S1', 380, '2026-04-01'),
+('U2', 'S2', 9, '2026-04-02'),
+('U2', 'S3', 42, '2026-04-03'),
+('U2', 'S4', 95, '2026-04-04'),
+('U2', 'S5', 3, '2026-04-05'),
+('U3', 'S1', 520, '2026-04-01'),
+('U3', 'S2', 14, '2026-04-02'),
+('U3', 'S3', 55, '2026-04-03'),
+('U3', 'S4', 110, '2026-04-04'),
+('U3', 'S5', 4, '2026-04-05'),
+('U4', 'S1', 290, '2026-04-01'),
+('U4', 'S2', 6, '2026-04-02'),
+('U4', 'S3', 28, '2026-04-03'),
+('U4', 'S4', 70, '2026-04-04'),
+('U4', 'S5', 1, '2026-04-05'),
+('U5', 'S1', 340, '2026-04-01'),
+('U5', 'S2', 11, '2026-04-02'),
+('U5', 'S3', 48, '2026-04-03'),
+('U5', 'S4', 130, '2026-04-04'),
+('U5', 'S5', 3, '2026-04-05'),
+('U1', 'S1', 450, '2026-04-10'),
+('U2', 'S2', 12, '2026-04-11'),
+('U3', 'S3', 65, '2026-04-12'),
+('U4', 'S4', 150, '2026-04-13'),
+('U5', 'S5', 5, '2026-04-14'),
+('U1', 'S2', 8, '2026-04-15'),
+('U2', 'S3', 38, '2026-04-16'),
+('U3', 'S4', 125, '2026-04-17'),
+('U4', 'S5', 2, '2026-04-18'),
+('U5', 'S1', 280, '2026-04-19'),
+('U1', 'S3', 50, '2026-04-20'),
+('U2', 'S4', 100, '2026-04-21'),
+('U3', 'S5', 6, '2026-04-22'),
+('U4', 'S1', 320, '2026-04-23'),
+('U5', 'S2', 13, '2026-04-24'),
+-- May 2026
+('U1', 'S1', 500, '2026-05-01'),
+('U1', 'S2', 10, '2026-05-02'),
+('U1', 'S3', 40, '2026-05-03'),
+('U1', 'S4', 90, '2026-05-04'),
+('U1', 'S5', 3, '2026-05-05'),
+('U2', 'S1', 410, '2026-05-01'),
+('U2', 'S2', 8, '2026-05-02'),
+('U2', 'S3', 45, '2026-05-03'),
+('U2', 'S4', 105, '2026-05-04'),
+('U2', 'S5', 4, '2026-05-05'),
+('U3', 'S1', 600, '2026-05-01'),
+('U3', 'S2', 16, '2026-05-02'),
+('U3', 'S3', 70, '2026-05-03'),
+('U3', 'S4', 140, '2026-05-04'),
+('U3', 'S5', 5, '2026-05-05'),
+('U4', 'S1', 350, '2026-05-01'),
+('U4', 'S2', 7, '2026-05-02'),
+('U4', 'S3', 32, '2026-05-03'),
+('U4', 'S4', 80, '2026-05-04'),
+('U4', 'S5', 2, '2026-05-05'),
+('U5', 'S1', 400, '2026-05-01'),
+('U5', 'S2', 12, '2026-05-02'),
+('U5', 'S3', 55, '2026-05-03'),
+('U5', 'S4', 120, '2026-05-04'),
+('U5', 'S5', 4, '2026-05-05'),
+('U1', 'S1', 480, '2026-05-10'),
+('U2', 'S2', 11, '2026-05-11'),
+('U3', 'S3', 60, '2026-05-12'),
+('U4', 'S4', 135, '2026-05-13'),
+('U5', 'S5', 6, '2026-05-14'),
+('U1', 'S2', 9, '2026-05-15'),
+('U2', 'S3', 52, '2026-05-16'),
+('U3', 'S4', 145, '2026-05-17'),
+('U4', 'S5', 3, '2026-05-18'),
+('U5', 'S1', 360, '2026-05-19'),
+('U1', 'S3', 44, '2026-05-20'),
+('U2', 'S4', 115, '2026-05-21'),
+('U3', 'S5', 7, '2026-05-22'),
+('U4', 'S1', 380, '2026-05-23'),
+('U5', 'S2', 14, '2026-05-24'),
+-- June 2026
+('U1', 'S1', 550, '2026-06-01'),
+('U1', 'S2', 11, '2026-06-02'),
+('U1', 'S3', 48, '2026-06-03'),
+('U1', 'S4', 100, '2026-06-04'),
+('U1', 'S5', 4, '2026-06-05'),
+('U2', 'S1', 440, '2026-06-01'),
+('U2', 'S2', 10, '2026-06-02'),
+('U2', 'S3', 50, '2026-06-03'),
+('U2', 'S4', 110, '2026-06-04'),
+('U2', 'S5', 5, '2026-06-05'),
+('U3', 'S1', 650, '2026-06-01'),
+('U3', 'S2', 18, '2026-06-02'),
+('U3', 'S3', 75, '2026-06-03'),
+('U3', 'S4', 155, '2026-06-04'),
+('U3', 'S5', 6, '2026-06-05'),
+('U4', 'S1', 380, '2026-06-01'),
+('U4', 'S2', 8, '2026-06-02'),
+('U4', 'S3', 36, '2026-06-03'),
+('U4', 'S4', 85, '2026-06-04'),
+('U4', 'S5', 2, '2026-06-05'),
+('U5', 'S1', 420, '2026-06-01'),
+('U5', 'S2', 13, '2026-06-02'),
+('U5', 'S3', 58, '2026-06-03'),
+('U5', 'S4', 125, '2026-06-04'),
+('U5', 'S5', 5, '2026-06-05'),
+('U1', 'S1', 520, '2026-06-10'),
+('U2', 'S2', 14, '2026-06-11'),
+('U3', 'S3', 68, '2026-06-12'),
+('U4', 'S4', 140, '2026-06-13'),
+('U5', 'S5', 7, '2026-06-14'),
+('U1', 'S2', 12, '2026-06-15'),
+('U2', 'S3', 56, '2026-06-16'),
+('U3', 'S4', 160, '2026-06-17'),
+('U4', 'S5', 4, '2026-06-18'),
+('U5', 'S1', 390, '2026-06-19'),
+('U1', 'S3', 62, '2026-06-20'),
+('U2', 'S4', 130, '2026-06-21'),
+('U3', 'S5', 8, '2026-06-22'),
+('U4', 'S1', 410, '2026-06-23'),
+('U5', 'S2', 15, '2026-06-24'),
+-- July 2026
+('U1', 'S1', 580, '2026-07-01'),
+('U1', 'S2', 13, '2026-07-02'),
+('U1', 'S3', 52, '2026-07-03'),
+('U1', 'S4', 105, '2026-07-04'),
+('U1', 'S5', 5, '2026-07-05'),
+('U2', 'S1', 470, '2026-07-01'),
+('U2', 'S2', 11, '2026-07-02'),
+('U2', 'S3', 54, '2026-07-03'),
+('U2', 'S4', 115, '2026-07-04'),
+('U2', 'S5', 6, '2026-07-05'),
+('U3', 'S1', 700, '2026-07-01'),
+('U3', 'S2', 20, '2026-07-02'),
+('U3', 'S3', 80, '2026-07-03'),
+('U3', 'S4', 165, '2026-07-04'),
+('U3', 'S5', 7, '2026-07-05'),
+('U4', 'S1', 400, '2026-07-01'),
+('U4', 'S2', 9, '2026-07-02'),
+('U4', 'S3', 40, '2026-07-03'),
+('U4', 'S4', 90, '2026-07-04'),
+('U4', 'S5', 3, '2026-07-05'),
+('U5', 'S1', 450, '2026-07-01'),
+('U5', 'S2', 14, '2026-07-02'),
+('U5', 'S3', 62, '2026-07-03'),
+('U5', 'S4', 135, '2026-07-04'),
+('U5', 'S5', 6, '2026-07-05'),
+('U1', 'S1', 560, '2026-07-10'),
+('U2', 'S2', 15, '2026-07-11'),
+('U3', 'S3', 72, '2026-07-12'),
+('U4', 'S4', 150, '2026-07-13'),
+('U5', 'S5', 8, '2026-07-14'),
+('U1', 'S2', 14, '2026-07-15'),
+('U2', 'S3', 60, '2026-07-16'),
+('U3', 'S4', 170, '2026-07-17'),
+('U4', 'S5', 5, '2026-07-18'),
+('U5', 'S1', 420, '2026-07-19'),
+('U1', 'S3', 66, '2026-07-20'),
+('U2', 'S4', 140, '2026-07-21'),
+('U3', 'S5', 9, '2026-07-22'),
+('U4', 'S1', 440, '2026-07-23'),
+('U5', 'S2', 16, '2026-07-24'),
+('U3', 'S2', 12, '2026-03-28'),
+('U4', 'S1', 600, '2026-04-01'),
+('U5', 'S4', 200, '2026-04-05'),
+('U1', 'S5', 3, '2026-04-08'),
+('U2', 'S4', 150, '2026-04-10'),
+('U3', 'S3', 80, '2026-04-12'),
+('U4', 'S5', 4, '2026-04-15'),
+('U5', 'S2', 15, '2026-04-18'),
+('U1', 'S1', 400, '2026-04-20'),
+('U2', 'S2', 10, '2026-04-22'),
+('U3', 'S4', 250, '2026-04-25'),
+('U4', 'S3', 55, '2026-04-28'),
+('U5', 'S5', 5, '2026-05-01'),
+('U1', 'S3', 45, '2026-05-03'),
+('U2', 'S5', 2, '2026-05-05'),
+('U3', 'S1', 700, '2026-05-08'),
+('U4', 'S4', 180, '2026-05-10'),
+('U5', 'S3', 60, '2026-05-12'),
+('U1', 'S2', 8, '2026-05-15'),
+('U2', 'S3', 70, '2026-05-18'),
+('U3', 'S5', 3, '2026-05-20'),
+('U4', 'S1', 450, '2026-05-22'),
+('U5', 'S4', 100, '2026-05-25'),
+('U1', 'S4', 120, '2026-05-28'),
+('U2', 'S1', 550, '2026-06-01'),
+('U3', 'S2', 20, '2026-06-03'),
+('U4', 'S5', 6, '2026-06-05'),
+('U5', 'S1', 320, '2026-06-08'),
+('U1', 'S5', 4, '2026-06-10');
