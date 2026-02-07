@@ -1,0 +1,45 @@
+{
+  "users": [
+    { "userId": "U1", "name": "Rohan", "email": "rohan@gmail.com" },
+    { "userId": "U2", "name": "Priya", "email": "priya@gmail.com" },
+    { "userId": "U3", "name": "Arjun", "email": "arjun@gmail.com" },
+    { "userId": "U4", "name": "Neha", "email": "neha@gmail.com" },
+    { "userId": "U5", "name": "Vikram", "email": "vikram@gmail.com" }
+  ],
+  "services": [
+    { "serviceId": "S1", "name": "API Calls", "unitPrice": 0.05, "unit": "request" },
+    { "serviceId": "S2", "name": "Cloud Storage", "unitPrice": 2.0, "unit": "GB" },
+    { "serviceId": "S3", "name": "SMS", "unitPrice": 0.10, "unit": "message" },
+    { "serviceId": "S4", "name": "Email Service", "unitPrice": 0.02, "unit": "email" },
+    { "serviceId": "S5", "name": "Video Streaming", "unitPrice": 5.0, "unit": "hour" }
+  ],
+  "usageRecords": [
+    { "userId": "U1", "serviceId": "S1", "units": 300, "usageDate": "2025-12-05" },
+    { "userId": "U2", "serviceId": "S2", "units": 4,   "usageDate": "2025-12-07" },
+    { "userId": "U3", "serviceId": "S1", "units": 500, "usageDate": "2025-12-10" },
+    { "userId": "U4", "serviceId": "S3", "units": 40,  "usageDate": "2025-12-15" },
+    { "userId": "U5", "serviceId": "S1", "units": 200, "usageDate": "2025-12-20" },
+    { "userId": "U1", "serviceId": "S4", "units": 60,  "usageDate": "2025-12-28" },
+    { "userId": "U1", "serviceId": "S2", "units": 5,   "usageDate": "2026-01-03" },
+    { "userId": "U2", "serviceId": "S1", "units": 250, "usageDate": "2026-01-06" },
+    { "userId": "U3", "serviceId": "S4", "units": 120, "usageDate": "2026-01-10" },
+    { "userId": "U4", "serviceId": "S2", "units": 8,   "usageDate": "2026-01-15" },
+    { "userId": "U5", "serviceId": "S3", "units": 30,  "usageDate": "2026-01-20" },
+    { "userId": "U2", "serviceId": "S5", "units": 1,   "usageDate": "2026-01-27" },
+    { "userId": "U1", "serviceId": "S3", "units": 25,  "usageDate": "2026-02-02" },
+    { "userId": "U2", "serviceId": "S2", "units": 6,   "usageDate": "2026-02-06" },
+    { "userId": "U3", "serviceId": "S5", "units": 2,   "usageDate": "2026-02-10" },
+    { "userId": "U4", "serviceId": "S4", "units": 140, "usageDate": "2026-02-14" },
+    { "userId": "U5", "serviceId": "S1", "units": 180, "usageDate": "2026-02-20" },
+    { "userId": "U1", "serviceId": "S1", "units": 350, "usageDate": "2026-02-26" },
+    { "userId": "U1", "serviceId": "S4", "units": 90,  "usageDate": "2026-03-03" },
+    { "userId": "U2", "serviceId": "S3", "units": 35,  "usageDate": "2026-03-06" },
+    { "userId": "U3", "serviceId": "S1", "units": 450, "usageDate": "2026-03-10" },
+    { "userId": "U4", "serviceId": "S2", "units": 9,   "usageDate": "2026-03-14" },
+    { "userId": "U5", "serviceId": "S5", "units": 2,   "usageDate": "2026-03-18" },
+    { "userId": "U2", "serviceId": "S1", "units": 300, "usageDate": "2026-03-25" }
+  ]
+}
+
+
+
