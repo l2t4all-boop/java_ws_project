@@ -1,9 +1,9 @@
 FROM eclipse-temurin:25-jdk AS build
 WORKDIR /app
-COPY invoice-gen-app/pom.xml invoice-gen-app/mvnw ./
-COPY invoice-gen-app/.mvn .mvn
+COPY pom.xml mvnw ./
+COPY .mvn .mvn
 RUN chmod +x mvnw && ./mvnw dependency:go-offline -B
-COPY invoice-gen-app/src src
+COPY src src
 RUN ./mvnw package -DskipTests -B
 
 FROM eclipse-temurin:25-jre
