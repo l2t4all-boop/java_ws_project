@@ -1,5 +1,6 @@
 
-const baseUrl = "https://java-ws-project-bjs8.onrender.com/api/v1/invoice";
+const domain = "https://java-ws-project-1.onrender.com";
+const baseUrl = `${domain}/api/v1/invoice`;
 let allInvoices = [];
 let filteredInvoices = [];
 let currentPage = 1;
