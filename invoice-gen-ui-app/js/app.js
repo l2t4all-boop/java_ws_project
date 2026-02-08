@@ -104,7 +104,7 @@ function renderInvoiceTable(invoices) {
     invoices.forEach(invoice => {
         tableHtml += `
             <tr>
-                <td><a href="invoice-details.html?invoiceId=${invoice.id}" class="text-decoration-none" style="cursor: pointer;">${invoice.invoiceNumber}</a></td>
+                <td><a href="invoice-details.html?invoiceId=${invoice.id}&invoiceNumber=${invoice.invoiceNumber}" class="text-decoration-none" style="cursor: pointer;">${invoice.invoiceNumber}</a></td>
                 <td>${invoice.userName}</td>
                 <td>${new Date(invoice.invoiceDate).toLocaleDateString()}</td>
                 <td>${new Date(invoice.dueDate).toLocaleDateString()}</td>
