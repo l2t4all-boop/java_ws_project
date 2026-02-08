@@ -34,7 +34,7 @@ public class DatabaseInitService {
 
             for (String statement : statements) {
                 String trimmed = statement.trim();
-                if (!trimmed.isEmpty() && !trimmed.startsWith("--")) {
+                if (!trimmed.isEmpty()) {
                     log.debug("Executing statement: {}", trimmed.substring(0, Math.min(50, trimmed.length())) + "...");
                     jdbcTemplate.execute(trimmed);
                     executedCount++;
