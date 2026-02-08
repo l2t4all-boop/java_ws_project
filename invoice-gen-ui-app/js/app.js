@@ -1,6 +1,4 @@
-
-const domain = "https://java-ws-project-1.onrender.com";
-const baseUrl = `${domain}/api/v1/invoice`;
+// baseUrl is loaded from config.js
 let allInvoices = [];
 let filteredInvoices = [];
 let currentPage = 1;

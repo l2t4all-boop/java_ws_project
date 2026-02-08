@@ -1,5 +1,4 @@
-const baseUrl = "http://localhost:8081/api/v1/invoice";
-
+// baseUrl is loaded from config.js
 let allItems = [];
 let filteredItems = [];
 let currentItemPage = 1;
