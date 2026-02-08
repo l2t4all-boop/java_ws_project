@@ -1,7 +1,7 @@
 package com.l2t.invgen.controller;
 
 import com.l2t.invgen.service.DatabaseInitService;
-import com.l2t.invgen.service.InvoiceService;
+import com.l2t.invgen.service.InvoiceGenerationService;
 import com.l2t.invgen.service.RatingService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,14 +16,14 @@ public class AdminController {
 
     private final DatabaseInitService databaseInitService;
     private final RatingService ratingService;
-    private final InvoiceService invoiceService;
+    private final InvoiceGenerationService invoiceGenerationService;
 
     public AdminController(DatabaseInitService databaseInitService,
                           RatingService ratingService,
-                          InvoiceService invoiceService) {
+                          InvoiceGenerationService invoiceGenerationService) {
         this.databaseInitService = databaseInitService;
         this.ratingService = ratingService;
-        this.invoiceService = invoiceService;
+        this.invoiceGenerationService = invoiceGenerationService;
     }
 
     @PostMapping("/init")
@@ -62,7 +62,7 @@ public class AdminController {
     @PostMapping("/generate-invoices")
     public ResponseEntity<Map<String, Object>> generateInvoices() {
         try {
-            int count = invoiceService.generateInvoices();
+            int count = invoiceGenerationService.generateInvoices();
             return ResponseEntity.ok(Map.of(
                 "status", "success",
                 "message", "Invoice generation completed successfully",
@@ -75,4 +75,6 @@ public class AdminController {
             ));
         }
     }
+
+
 }
