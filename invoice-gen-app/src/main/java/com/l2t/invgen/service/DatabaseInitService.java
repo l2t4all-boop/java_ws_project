@@ -1,5 +1,6 @@
 package com.l2t.invgen.service;
 
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -11,13 +12,10 @@ import java.nio.charset.StandardCharsets;
 
 @Slf4j
 @Service
+@RequiredArgsConstructor
 public class DatabaseInitService {
 
     private final JdbcTemplate jdbcTemplate;
-
-    public DatabaseInitService(JdbcTemplate jdbcTemplate) {
-        this.jdbcTemplate = jdbcTemplate;
-    }
 
     public void initializeDatabase() {
         log.info("Starting database initialization...");
@@ -34,7 +32,7 @@ public class DatabaseInitService {
 
             for (String statement : statements) {
                 String trimmed = statement.trim();
-                if (!trimmed.isEmpty() && !trimmed.startsWith("--")) {
+                if (!trimmed.isEmpty()) {
                     log.debug("Executing statement: {}", trimmed.substring(0, Math.min(50, trimmed.length())) + "...");
                     jdbcTemplate.execute(trimmed);
                     executedCount++;

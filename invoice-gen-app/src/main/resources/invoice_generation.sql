@@ -1,19 +1,16 @@
--- Drop tables if exist (for clean setup)
-DROP TABLE IF EXISTS invoice_line_item;
-DROP TABLE IF EXISTS invoice;
-DROP TABLE IF EXISTS rated_transaction;
-DROP TABLE IF EXISTS usage_records;
-DROP TABLE IF EXISTS services;
-DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS invoice_line_item CASCADE;
+DROP TABLE IF EXISTS invoice CASCADE;
+DROP TABLE IF EXISTS rated_transaction CASCADE;
+DROP TABLE IF EXISTS usage_records CASCADE;
+DROP TABLE IF EXISTS services CASCADE;
+DROP TABLE IF EXISTS users CASCADE;
 
--- Users table
 CREATE TABLE users (
     user_id VARCHAR(10) PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
     email VARCHAR(255) NOT NULL UNIQUE
 );
 
--- Services table
 CREATE TABLE services (
     service_id VARCHAR(10) PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -21,7 +18,6 @@ CREATE TABLE services (
     unit VARCHAR(50) NOT NULL
 );
 
--- Usage Records table
 CREATE TABLE usage_records (
     id SERIAL PRIMARY KEY,
     user_id VARCHAR(10) NOT NULL REFERENCES users(user_id),
@@ -30,19 +26,6 @@ CREATE TABLE usage_records (
     usage_date DATE NOT NULL
 );
 
--- Rated Transaction table
-CREATE TABLE rated_transaction (
-    id SERIAL PRIMARY KEY,
-    user_id VARCHAR(10) NOT NULL REFERENCES users(user_id),
-    service_id VARCHAR(10) NOT NULL REFERENCES services(service_id),
-    units INTEGER NOT NULL,
-    unit_price DECIMAL(12, 2) NOT NULL,
-    amount DECIMAL(12, 2) NOT NULL,
-    is_billed BOOLEAN DEFAULT FALSE,
-    txn_date DATE
-);
-
--- Invoice table
 CREATE TABLE invoice (
     id SERIAL PRIMARY KEY,
     invoice_number VARCHAR(50) NOT NULL UNIQUE,
@@ -52,7 +35,6 @@ CREATE TABLE invoice (
     total_amount DECIMAL(12, 2) NOT NULL
 );
 
--- Invoice Line Item table
 CREATE TABLE invoice_line_item (
     id SERIAL PRIMARY KEY,
     invoice_id INTEGER NOT NULL REFERENCES invoice(id),
@@ -63,15 +45,18 @@ CREATE TABLE invoice_line_item (
     item_date DATE
 );
 
--- Indexes
-CREATE INDEX idx_usage_records_user_id ON usage_records(user_id);
-CREATE INDEX idx_usage_records_service_id ON usage_records(service_id);
-CREATE INDEX idx_rated_transaction_user_id ON rated_transaction(user_id);
-CREATE INDEX idx_rated_transaction_is_billed ON rated_transaction(is_billed);
-CREATE INDEX idx_invoice_user_id ON invoice(user_id);
-CREATE INDEX idx_invoice_line_item_invoice_id ON invoice_line_item(invoice_id);
+CREATE TABLE rated_transaction (
+    id SERIAL PRIMARY KEY,
+    user_id VARCHAR(10) NOT NULL REFERENCES users(user_id),
+    service_id VARCHAR(10) NOT NULL REFERENCES services(service_id),
+    units INTEGER NOT NULL,
+    unit_price DECIMAL(12, 2) NOT NULL,
+    amount DECIMAL(12, 2) NOT NULL,
+    is_billed BOOLEAN DEFAULT FALSE,
+    txn_date DATE,
+    invoice_line_item_id INTEGER REFERENCES invoice_line_item(id)
+);
 
--- Insert Users
 INSERT INTO users (user_id, name, email) VALUES
 ('U1', 'Rohan', 'rohan@gmail.com'),
 ('U2', 'Priya', 'priya@gmail.com'),
@@ -79,7 +64,6 @@ INSERT INTO users (user_id, name, email) VALUES
 ('U4', 'Neha', 'neha@gmail.com'),
 ('U5', 'Vikram', 'vikram@gmail.com');
 
--- Insert Services
 INSERT INTO services (service_id, name, unit_price, unit) VALUES
 ('S1', 'API Calls', 0.05, 'request'),
 ('S2', 'Cloud Storage', 2.00, 'GB'),
@@ -87,7 +71,7 @@ INSERT INTO services (service_id, name, unit_price, unit) VALUES
 ('S4', 'Email Service', 0.02, 'email'),
 ('S5', 'Video Streaming', 5.00, 'hour');
 
--- Insert Usage Records
+
 INSERT INTO usage_records (user_id, service_id, units, usage_date) VALUES
 ('U1', 'S1', 300, '2025-12-05'),
 ('U2', 'S2', 4, '2025-12-07'),
@@ -113,7 +97,6 @@ INSERT INTO usage_records (user_id, service_id, units, usage_date) VALUES
 ('U4', 'S2', 9, '2026-03-14'),
 ('U5', 'S5', 2, '2026-03-18'),
 ('U2', 'S1', 300, '2026-03-25'),
--- April 2026
 ('U1', 'S1', 420, '2026-04-01'),
 ('U1', 'S2', 7, '2026-04-02'),
 ('U1', 'S3', 35, '2026-04-03'),
@@ -154,7 +137,6 @@ INSERT INTO usage_records (user_id, service_id, units, usage_date) VALUES
 ('U3', 'S5', 6, '2026-04-22'),
 ('U4', 'S1', 320, '2026-04-23'),
 ('U5', 'S2', 13, '2026-04-24'),
--- May 2026
 ('U1', 'S1', 500, '2026-05-01'),
 ('U1', 'S2', 10, '2026-05-02'),
 ('U1', 'S3', 40, '2026-05-03'),
@@ -195,7 +177,6 @@ INSERT INTO usage_records (user_id, service_id, units, usage_date) VALUES
 ('U3', 'S5', 7, '2026-05-22'),
 ('U4', 'S1', 380, '2026-05-23'),
 ('U5', 'S2', 14, '2026-05-24'),
--- June 2026
 ('U1', 'S1', 550, '2026-06-01'),
 ('U1', 'S2', 11, '2026-06-02'),
 ('U1', 'S3', 48, '2026-06-03'),
@@ -236,7 +217,6 @@ INSERT INTO usage_records (user_id, service_id, units, usage_date) VALUES
 ('U3', 'S5', 8, '2026-06-22'),
 ('U4', 'S1', 410, '2026-06-23'),
 ('U5', 'S2', 15, '2026-06-24'),
--- July 2026
 ('U1', 'S1', 580, '2026-07-01'),
 ('U1', 'S2', 13, '2026-07-02'),
 ('U1', 'S3', 52, '2026-07-03'),
