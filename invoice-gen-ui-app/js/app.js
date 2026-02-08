@@ -1,5 +1,5 @@
 
-const baseUrl = "http://localhost:8081/api/v1/invoice";
+const baseUrl = "https://java-ws-project-bjs8.onrender.com/api/v1/invoice";
 let allInvoices = [];
 let filteredInvoices = [];
 let currentPage = 1;
