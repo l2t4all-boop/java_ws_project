@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wallet App</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+body { font-family: 'Inter', sans-serif; }
+.modal-backdrop { background: rgba(0,0,0,0.4); backdrop-filter: blur(2px); }
+</style>
+</head>
+
+<body class="bg-gray-50 min-h-screen text-slate-800">
+
+<!-- HEADER -->
+<header class="bg-white border-b sticky top-0 z-10">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <div class="bg-blue-600 p-2 rounded-lg">
+        <i data-lucide="wallet" class="text-white w-5 h-5"></i>
+      </div>
+      <h1 class="text-xl font-bold">Wallet App</h1>
+    </div>
+    <button onclick="openModal('createWalletModal')" 
+      class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 flex items-center gap-2">
+      <i data-lucide="plus" class="w-4 h-4"></i>
+      Create Wallet
+    </button>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main class="max-w-6xl mx-auto px-6 py-8">
+
+<h2 class="text-2xl font-bold mb-6">Wallet List</h2>
+
+<div class="bg-white rounded-xl shadow border overflow-hidden">
+<table class="w-full text-left">
+<thead class="bg-slate-100 text-sm uppercase">
+<tr>
+<th class="px-6 py-3">ID</th>
+<th class="px-6 py-3">Username</th>
+<th class="px-6 py-3">Mobile</th>
+<th class="px-6 py-3">Balance</th>
+<th class="px-6 py-3 text-right">Actions</th>
+</tr>
+</thead>
+<tbody id="walletTable" class="divide-y"></tbody>
+</table>
+</div>
+
+</main>
+
+<!-- CREATE WALLET MODAL -->
+<div id="createWalletModal" class="fixed inset-0 hidden flex items-center justify-center modal-backdrop">
+<div class="bg-white w-full max-w-md rounded-xl shadow-lg p-6 space-y-4">
+<h3 class="text-lg font-bold">Create Wallet</h3>
+
+<input id="newUsername" type="text" placeholder="Full Name"
+class="w-full border px-3 py-2 rounded-lg">
+
+<input id="newMobile" type="text" placeholder="Mobile Number"
+class="w-full border px-3 py-2 rounded-lg">
+
+<div class="flex gap-3">
+<button onclick="createWallet()" 
+class="flex-1 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+Create
+</button>
+<button onclick="closeModal('createWalletModal')" 
+class="flex-1 bg-gray-200 py-2 rounded-lg">
+Cancel
+</button>
+</div>
+</div>
+</div>
+
+<!-- TRANSACTION MODAL -->
+<div id="transactionModal" class="fixed inset-0 hidden flex items-center justify-center modal-backdrop">
+<div class="bg-white w-full max-w-md rounded-xl shadow-lg p-6 space-y-4">
+<h3 id="txTitle" class="text-lg font-bold"></h3>
+
+<input id="txWalletId" readonly class="w-full border px-3 py-2 rounded-lg bg-gray-100">
+<input id="txAmount" type="number" placeholder="Enter Amount"
+class="w-full border px-3 py-2 rounded-lg">
+
+<div class="flex gap-3">
+<button id="txButton" class="flex-1 bg-blue-600 text-white py-2 rounded-lg"></button>
+<button onclick="closeModal('transactionModal')" 
+class="flex-1 bg-gray-200 py-2 rounded-lg">
+Cancel
+</button>
+</div>
+</div>
+</div>
+
+<!-- TRANSFER MODAL -->
+<div id="transferModal" class="fixed inset-0 hidden flex items-center justify-center modal-backdrop">
+<div class="bg-white w-full max-w-md rounded-xl shadow-lg p-6 space-y-4">
+<h3 class="text-lg font-bold">Transfer Money</h3>
+
+<input id="fromMobile" readonly class="w-full border px-3 py-2 rounded-lg bg-gray-100">
+<input id="toMobile" type="text" placeholder="Recipient Mobile"
+class="w-full border px-3 py-2 rounded-lg">
+<input id="transferAmount" type="number" placeholder="Amount"
+class="w-full border px-3 py-2 rounded-lg">
+
+<div class="flex gap-3">
+<button onclick="transferMoney()" 
+class="flex-1 bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">
+Transfer
+</button>
+<button onclick="closeModal('transferModal')" 
+class="flex-1 bg-gray-200 py-2 rounded-lg">
+Cancel
+</button>
+</div>
+</div>
+</div>
+
+<script>
+lucide.createIcons();
+
+let wallets = [
+{ id:"#WLT-1001", username:"Alex", mobile:"1111111111", balance:1200 },
+{ id:"#WLT-1002", username:"Sarah", mobile:"2222222222", balance:500 }
+];
+
+let counter = 1003;
+let currentAction = "";
+
+function openModal(id){ document.getElementById(id).classList.remove("hidden"); }
+function closeModal(id){ document.getElementById(id).classList.add("hidden"); }
+
+function renderWallets(){
+let table = document.getElementById("walletTable");
+table.innerHTML = "";
+wallets.forEach(w=>{
+table.innerHTML += `
+<tr>
+<td class="px-6 py-3">${w.id}</td>
+<td class="px-6 py-3">${w.username}</td>
+<td class="px-6 py-3">${w.mobile}</td>
+<td class="px-6 py-3 text-green-600 font-semibold">$${w.balance.toFixed(2)}</td>
+<td class="px-6 py-3 text-right space-x-2">
+<button onclick="openTransaction('Load','${w.id}')" class="text-blue-600 text-sm">Load</button>
+<button onclick="openTransaction('Withdraw','${w.id}')" class="text-amber-600 text-sm">Withdraw</button>
+<button onclick="openTransfer('${w.mobile}')" class="text-gray-600 text-sm">Transfer</button>
+</td>
+</tr>`;
+});
+}
+
+function createWallet(){
+let name = document.getElementById("newUsername").value.trim();
+let mobile = document.getElementById("newMobile").value.trim();
+
+if(!name || !mobile){ alert("All fields required!"); return; }
+if(wallets.some(w=>w.mobile===mobile)){ alert("Mobile already exists!"); return; }
+
+wallets.push({ id:"#WLT-"+counter++, username:name, mobile:mobile, balance:0 });
+renderWallets();
+closeModal("createWalletModal");
+document.getElementById("newUsername").value="";
+document.getElementById("newMobile").value="";
+}
+
+function openTransaction(action,id){
+currentAction = action;
+document.getElementById("txTitle").innerText = action+" Money";
+document.getElementById("txWalletId").value = id;
+document.getElementById("txButton").innerText = action;
+document.getElementById("txButton").onclick = processTransaction;
+openModal("transactionModal");
+}
+
+function processTransaction(){
+let id = document.getElementById("txWalletId").value;
+let amount = parseFloat(document.getElementById("txAmount").value);
+
+if(!amount || amount<=0){ alert("Enter valid amount!"); return; }
+
+let wallet = wallets.find(w=>w.id===id);
+
+if(currentAction==="Withdraw" && wallet.balance<amount){
+alert("Insufficient balance!");
+return;
+}
+
+if(currentAction==="Load"){ wallet.balance+=amount; }
+else{ wallet.balance-=amount; }
+
+renderWallets();
+closeModal("transactionModal");
+document.getElementById("txAmount").value="";
+}
+
+function openTransfer(mobile){
+document.getElementById("fromMobile").value = mobile;
+openModal("transferModal");
+}
+
+function transferMoney(){
+let from = document.getElementById("fromMobile").value;
+let to = document.getElementById("toMobile").value.trim();
+let amount = parseFloat(document.getElementById("transferAmount").value);
+
+if(!to || !amount || amount<=0){ alert("Fill all fields correctly!"); return; }
+
+let fromWallet = wallets.find(w=>w.mobile===from);
+let toWallet = wallets.find(w=>w.mobile===to);
+
+if(!toWallet){ alert("Recipient not found!"); return; }
+if(fromWallet.balance<amount){ alert("Insufficient balance!"); return; }
+
+fromWallet.balance-=amount;
+toWallet.balance+=amount;
+
+renderWallets();
+closeModal("transferModal");
+document.getElementById("toMobile").value="";
+document.getElementById("transferAmount").value="";
+alert("Transfer Successful!");
+}
+
+renderWallets();
+</script>
+
+</body>
+</html>

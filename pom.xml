@@ -20,6 +20,7 @@
         <module>cbook-server-app</module>
         <module>learning-spring-core</module>
         <module>invoice-gen-app</module>
+        <module>cbook</module>
     </modules>
 
 
